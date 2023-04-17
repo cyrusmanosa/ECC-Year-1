@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MemoIntent</string>
+    <string name="input_memo">メモを入力</string>
+    <string name="lb_please_input_keyword">キーワードを入力してください</string>
+    <string name="lb_menu_web">webアプリで検索</string>
+    <string name="lb_menu_next">次の画面</string>
+    <string name="lb_menu_camera">カメラを起動</string>
+</resources>

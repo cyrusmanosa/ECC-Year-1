@@ -1,0 +1,13 @@
+第13週　アルゴリズム宿題　解答用紙
+
+問1
+　① sum C ← 0 
+　② sum B ← sum B + scr B
+　③ sum A < sum B
+
+
+問2
+　① InputNumber >= 0
+　② InputNumber[hour] * InputNumber[pay]
+　③ SumAll ← 0
+　④ Sum[i]

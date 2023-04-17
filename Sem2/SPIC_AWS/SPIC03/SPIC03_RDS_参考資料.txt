@@ -1,0 +1,17 @@
+RDSへのアクセス：
+mysql -h RDSのエンドポイント -u root -p
+
+
+DBの作成と選択：
+create database spic_db;
+use spic_db
+
+テーブルの作成：
+CREATE TABLE `memos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `memo` text NOT NULL,
+  `created_at` datetime NOT NULL
+);
+
+接続終了：
+quit

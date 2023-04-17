@@ -1,0 +1,314 @@
+
+/*
+データベース演習I 課題11
+クラス：SK1A04
+制作者：文家俊
+作成日：2023/01/19
+*/
+
+mysql> source database11.sql
+--------------
+ALTER TABLE PROTOTYPE ADD PRIMARY KEY( PROTOTYPE_NO )
+--------------
+
+Query OK, 0 rows affected (0.17 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+--------------
+SHOW COLUMNS FROM PROTOTYPE
+--------------
+
++--------------+-------------+------+-----+---------+-------+
+| Field        | Type        | Null | Key | Default | Extra |
++--------------+-------------+------+-----+---------+-------+
+| PROTOTYPE_NO | char(4)     | NO   | PRI | NULL    |       |
+| PROTONAME    | varchar(50) | YES  |     | NULL    |       |
+| CATEGORY     | varchar(4)  | YES  |     | NULL    |       |
+| PRICE        | int         | YES  |     | NULL    |       |
++--------------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+--------------
+ALTER TABLE JOB MODIFY JOB_NO INT NOT NULL,
+				MODIFY JNAME VARCHAR(4) NOT NULL,
+				ADD PRIMARY KEY( JOB_NO )
+--------------
+
+Query OK, 0 rows affected (0.10 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+--------------
+SHOW COLUMNS FROM JOB
+--------------
+
++--------+------------+------+-----+---------+-------+
+| Field  | Type       | Null | Key | Default | Extra |
++--------+------------+------+-----+---------+-------+
+| JOB_NO | int        | NO   | PRI | NULL    |       |
+| JNAME  | varchar(4) | NO   |     | NULL    |       |
++--------+------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+--------------
+ALTER TABLE RANKPOINT MODIFY RANK_NAME varchar(6) NOT NULL,
+					  MODIFY LO_POINT INT NOT NULL,
+					  MODIFY HI_POINT INT NOT NULL,
+					  ADD PRIMARY KEY( LO_POINT )
+--------------
+
+Query OK, 0 rows affected (0.10 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+--------------
+SHOW COLUMNS FROM RANKPOINT
+--------------
+
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| RANK_NAME | varchar(6)  | NO   |     | NULL    |       |
+| RANK_DESC | varchar(50) | YES  |     | NULL    |       |
+| LO_POINT  | int         | NO   | PRI | NULL    |       |
+| HI_POINT  | int         | NO   |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+--------------
+ALTER TABLE RECIPE MODIFY PRODUCT_NO char(4) NOT NULL,
+				   MODIFY MATERIAL_NO char(5) NOT NULL,
+ 				   MODIFY QUANTITY INT NOT NULL
+--------------
+
+Query OK, 0 rows affected (0.10 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+--------------
+ALTER TABLE RECIPE ADD PRIMARY KEY( PRODUCT_NO,MATERIAL_NO )
+--------------
+
+Query OK, 0 rows affected (0.11 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+--------------
+SHOW COLUMNS FROM RECIPE
+--------------
+
++-------------+---------+------+-----+---------+-------+
+| Field       | Type    | Null | Key | Default | Extra |
++-------------+---------+------+-----+---------+-------+
+| PRODUCT_NO  | char(4) | NO   | PRI | NULL    |       |
+| MATERIAL_NO | char(5) | NO   | PRI | NULL    |       |
+| QUANTITY    | int     | NO   |     | NULL    |       |
++-------------+---------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+--------------
+ALTER TABLE BIKE MODIFY BIKE_NO CHAR(5) NOT NULL,
+				 MODIFY BNAME VARCHAR(50) NOT NULL,
+				 MODIFY BUY_DATE DATE NOT NULL,
+				 MODIFY STORE_NO CHAR(3) NOT NULL
+--------------
+
+Query OK, 0 rows affected (0.12 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+--------------
+ALTER TABLE BIKE ADD PRIMARY KEY( BIKE_NO )
+--------------
+
+Query OK, 0 rows affected (0.10 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+--------------
+SHOW COLUMNS FROM BIKE
+--------------
+
++--------------+-------------+------+-----+---------+-------+
+| Field        | Type        | Null | Key | Default | Extra |
++--------------+-------------+------+-----+---------+-------+
+| BIKE_NO      | char(5)     | NO   | PRI | NULL    |       |
+| BNAME        | varchar(50) | NO   |     | NULL    |       |
+| BUY_DATE     | date        | NO   |     | NULL    |       |
+| LENGTH       | int         | YES  |     | NULL    |       |
+| HEIGHT       | int         | YES  |     | NULL    |       |
+| WIDTH        | int         | YES  |     | NULL    |       |
+| SEAT_HEIGHT  | int         | YES  |     | NULL    |       |
+| WEIGHT       | int         | YES  |     | NULL    |       |
+| CAPACITY     | double(4,1) | YES  |     | NULL    |       |
+| DISPLACEMENT | int         | YES  |     | NULL    |       |
+| STORE_NO     | char(3)     | NO   |     | NULL    |       |
++--------------+-------------+------+-----+---------+-------+
+11 rows in set (0.00 sec)
+
+--------------
+ALTER TABLE SIZE MODIFY CATEGORY VARCHAR(4) NOT NULL,
+				 MODIFY SIZE CHAR(1) NOT NULL,
+				 MODIFY DIFF INT NOT NULL DEFAULT 0
+--------------
+
+Query OK, 0 rows affected (0.09 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+--------------
+ALTER TABLE SIZE ADD PRIMARY KEY( CATEGORY,SIZE )
+--------------
+
+Query OK, 0 rows affected (0.20 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+--------------
+SHOW COLUMNS FROM SIZE
+--------------
+
++----------+------------+------+-----+---------+-------+
+| Field    | Type       | Null | Key | Default | Extra |
++----------+------------+------+-----+---------+-------+
+| CATEGORY | varchar(4) | NO   | PRI | NULL    |       |
+| SIZE     | char(1)    | NO   | PRI | NULL    |       |
+| DIFF     | int        | NO   |     | 0       |       |
++----------+------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+--------------
+ALTER TABLE STORE MODIFY STORE_NO CHAR(3) NOT NULL,
+				  MODIFY SNAME VARCHAR(20) NOT NULL,
+				  MODIFY HOLIDAY VARCHAR(7) NOT NULL DEFAULT '年中無休',
+				  MODIFY STATUS VARCHAR(5) NOT NULL DEFAULT '未オープン'
+--------------
+
+Query OK, 0 rows affected (0.18 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+--------------
+ALTER TABLE STORE ADD PRIMARY KEY( STORE_NO )
+--------------
+
+Query OK, 0 rows affected (0.10 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+--------------
+ALTER TABLE STORE ADD UNIQUE( TEL )
+--------------
+
+Query OK, 0 rows affected (0.05 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+--------------
+SHOW COLUMNS FROM STORE
+--------------
+
++-------------+--------------+------+-----+-----------------+-------+
+| Field       | Type         | Null | Key | Default         | Extra |
++-------------+--------------+------+-----+-----------------+-------+
+| STORE_NO    | char(3)      | NO   | PRI | NULL            |       |
+| SNAME       | varchar(20)  | NO   |     | NULL            |       |
+| TEL         | varchar(10)  | YES  | UNI | NULL            |       |
+| PREFECTURES | varchar(3)   | YES  |     | NULL            |       |
+| ADDRESS     | varchar(100) | YES  |     | NULL            |       |
+| OPEN_TIME   | time         | YES  |     | NULL            |       |
+| CLOSE_TIME  | time         | YES  |     | NULL            |       |
+| HOLIDAY     | varchar(7)   | NO   |     | 年中無休        |       |
+| STATUS      | varchar(5)   | NO   |     | 未オープン      |       |
++-------------+--------------+------+-----+-----------------+-------+
+9 rows in set (0.00 sec)
+
+--------------
+ALTER TABLE MATERIAL ADD CHECK( COST >= 0 ),
+					 ADD PRIMARY KEY( MATERIAL_NO ),
+					 MODIFY MATERIAL_NO char(5) COLLATE utf8mb4_unicode_ci NOT NULL,
+					 MODIFY MNAME varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+					 MODIFY ORIGIN varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+					 MODIFY COST int NOT NULL
+--------------
+
+Query OK, 24 rows affected (0.12 sec)
+Records: 24  Duplicates: 0  Warnings: 0
+
+--------------
+SHOW COLUMNS FROM MATERIAL
+--------------
+
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| MATERIAL_NO | char(5)     | NO   | PRI | NULL    |       |
+| MNAME       | varchar(50) | NO   |     | NULL    |       |
+| ORIGIN      | varchar(20) | YES  |     | NULL    |       |
+| COST        | int         | NO   |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+4 rows in set (0.01 sec)
+
+--------------
+ALTER TABLE EMPLOYEE ADD CHECK ( SALARY >= 0 ),
+					 ADD PRIMARY KEY( EMP_NO ),
+					 ADD UNIQUE ( TEL ),
+					 MODIFY EMP_NO char(5) COLLATE utf8mb4_unicode_ci NOT NULL,
+					 MODIFY ENAME varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+					 MODIFY BIRTHDAY date NOT NULL,
+					 MODIFY TEL varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
+					 MODIFY ADDRESS varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+					 MODIFY HIREDATE date DEFAULT NULL,
+					 MODIFY JOB_NO int DEFAULT NULL,
+					 MODIFY RANK_POINT int NOT NULL,
+					 MODIFY SALARY int NOT NULL,
+					 MODIFY WORK_STORE char(3) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+					 MODIFY MGR_NO char(5) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+--------------
+
+Query OK, 0 rows affected (0.14 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+--------------
+SHOW COLUMNS FROM EMPLOYEE
+--------------
+
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| EMP_NO     | char(5)      | NO   | PRI | NULL    |       |
+| ENAME      | varchar(20)  | NO   |     | NULL    |       |
+| BIRTHDAY   | date         | NO   |     | NULL    |       |
+| TEL        | varchar(10)  | NO   | UNI | NULL    |       |
+| ADDRESS    | varchar(100) | NO   |     | NULL    |       |
+| HIREDATE   | date         | YES  |     | NULL    |       |
+| JOB_NO     | int          | YES  |     | NULL    |       |
+| RANK_POINT | int          | NO   |     | NULL    |       |
+| SALARY     | int          | NO   |     | NULL    |       |
+| WORK_STORE | char(3)      | YES  |     | NULL    |       |
+| MGR_NO     | char(5)      | YES  |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
+11 rows in set (0.00 sec)
+
+--------------
+CREATE TABLE TAX(
+	TAX INT NOT NULL,
+	START_DATE DATE NOT NULL,
+	END_DATE DATE,
+	TAKEOUT_FLG INT NOT NULL
+)
+--------------
+
+Query OK, 0 rows affected (0.06 sec)
+
+--------------
+ALTER TABLE TAX ADD PRIMARY KEY( START_DATE,TAKEOUT_FLG )
+--------------
+
+Query OK, 0 rows affected (0.28 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+--------------
+SHOW COLUMNS FROM TAX
+--------------
+
++-------------+------+------+-----+---------+-------+
+| Field       | Type | Null | Key | Default | Extra |
++-------------+------+------+-----+---------+-------+
+| TAX         | int  | NO   |     | NULL    |       |
+| START_DATE  | date | NO   | PRI | NULL    |       |
+| END_DATE    | date | YES  |     | NULL    |       |
+| TAKEOUT_FLG | int  | NO   | PRI | NULL    |       |
++-------------+------+------+-----+---------+-------+
+4 rows in set (0.01 sec)
+
+mysql> notee

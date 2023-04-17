@@ -1,0 +1,26 @@
+第11週　アルゴリズム宿題　解答用紙
+
+問1
+　① i < 9
+　② Max < A(N)
+　③ A(N) < MIN
+　④ RN ← MAX - MIN
+　⑤ i <= 9
+　⑥ Max < A[N]
+　⑦ A[N] < MIN
+　⑧ MAX - MIN
+
+
+問2
+　① SUM ← 0
+　② i < 10
+　③ SUM ← SUM + A(i)
+　④ NUM ← NUM + 1
+　⑤ i ← i + 1
+　⑥ AVG ← SUM / NUM
+　⑦ SUM ← 0
+　⑧ i < 10
+　⑨ SUM ← SUM + A[i]
+　⑩ NUM ← NUM + 1
+　⑪ i ← i + 1
+　⑫ SUM / NUM

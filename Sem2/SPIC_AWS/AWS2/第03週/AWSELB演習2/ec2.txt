@@ -1,0 +1,6 @@
+sudo yum -y install httpd
+sudo amazon-linux-extras install php8.0 -y
+sudo systemctl start httpd
+sudo systemctl enable httpd
+echo "<?php phpinfo(); ?>" > test.php
+sudo mv test.php /var/www/html/

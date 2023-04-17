@@ -1,0 +1,239 @@
+/*
+データベース演習I 課題9
+クラス：SK1A04
+制作者：文家俊
+作成日：2022/12/15
+*/
+
+
+
+mysql> source database9.sql
+--------------
+SELECT MIN(SAL)FROM 
+(SELECT MAX(SALARY) AS SAL FROM EMPLOYEE GROUP BY WORK_STORE) AS WS
+--------------
+
++----------+
+| MIN(SAL) |
++----------+
+|      800 |
++----------+
+1 row in set (0.00 sec)
+
+--------------
+INSERT INTO PROTOTYPE(PROTOTYPE_NO,PROTONAME,CATEGORY,PRICE)
+VALUES('9003','ミックスジュース','ドリンク','200')
+--------------
+
+Query OK, 1 row affected (0.04 sec)
+
+--------------
+SELECT * FROM PROTOTYPE
+--------------
+
++--------------+--------------------------+--------------+-------+
+| PROTOTYPE_NO | PROTONAME                | CATEGORY     | PRICE |
++--------------+--------------------------+--------------+-------+
+| 9001         | MAXチーズピザ            | ピザ         |  3000 |
+| 9002         | 夏野菜ピザ               | ピザ         |  3000 |
+| 9003         | ミックスジュース         | ドリンク     |   200 |
++--------------+--------------------------+--------------+-------+
+3 rows in set (0.00 sec)
+
+--------------
+UPDATE PROTOTYPE 
+SET PRICE = (SELECT PRICE FROM PRODUCT WHERE PNAME = 'ギガミート') 
+WHERE PROTOTYPE_NO = '9002'
+--------------
+
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+--------------
+SELECT * FROM PROTOTYPE
+--------------
+
++--------------+--------------------------+--------------+-------+
+| PROTOTYPE_NO | PROTONAME                | CATEGORY     | PRICE |
++--------------+--------------------------+--------------+-------+
+| 9001         | MAXチーズピザ            | ピザ         |  3000 |
+| 9002         | 夏野菜ピザ               | ピザ         |  2500 |
+| 9003         | ミックスジュース         | ドリンク     |   200 |
++--------------+--------------------------+--------------+-------+
+3 rows in set (0.00 sec)
+
+--------------
+SELECT * FROM PROTOTYPE
+WHERE CATEGORY = 'ピザ'
+--------------
+
++--------------+--------------------+----------+-------+
+| PROTOTYPE_NO | PROTONAME          | CATEGORY | PRICE |
++--------------+--------------------+----------+-------+
+| 9001         | MAXチーズピザ      | ピザ     |  3000 |
+| 9002         | 夏野菜ピザ         | ピザ     |  2500 |
++--------------+--------------------+----------+-------+
+2 rows in set (0.00 sec)
+
+--------------
+SELECT * FROM MATERIAL AS M
+WHERE NOT EXISTS 
+( SELECT MATERIAL_NO FROM RECIPE AS R WHERE R.MATERIAL_NO = M.MATERIAL_NO)
+--------------
+
++-------------+--------------------+--------------+------+
+| MATERIAL_NO | MNAME              | ORIGIN       | COST |
++-------------+--------------------+--------------+------+
+| 00024       | ゴーダチーズ       | オランダ     |  550 |
++-------------+--------------------+--------------+------+
+1 row in set (0.00 sec)
+
+--------------
+INSERT RECIPE ( PRODUCT_NO , MATERIAL_NO , QUANTITY )
+VALUES ('9001','00024','1')
+--------------
+
+Query OK, 1 row affected (0.00 sec)
+
+--------------
+SELECT * FROM RECIPE WHERE PRODUCT_NO = '9001'
+--------------
+
++------------+-------------+----------+
+| PRODUCT_NO | MATERIAL_NO | QUANTITY |
++------------+-------------+----------+
+| 9001       | 00001       |        1 |
+| 9001       | 00002       |        2 |
+| 9001       | 00003       |        2 |
+| 9001       | 00004       |        2 |
+| 9001       | 00005       |        2 |
+| 9001       | 00023       |        1 |
+| 9001       | 00024       |        1 |
++------------+-------------+----------+
+7 rows in set (0.00 sec)
+
+--------------
+UPDATE PROTOTYPE SET PROTOTYPE_NO = 
+(SELECT LPAD( MAX(PRODUCT_NO) + 1, 4,'0') FROM PRODUCT WHERE CATEGORY = 'ピザ') 
+WHERE PROTOTYPE_NO = '9001'
+--------------
+
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+--------------
+UPDATE PROTOTYPE SET PROTOTYPE_NO = 
+(SELECT LPAD( MAX(PRODUCT_NO) + 2, 4,'0') FROM PRODUCT WHERE CATEGORY = 'ピザ') 
+WHERE PROTOTYPE_NO = '9002'
+--------------
+
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+--------------
+SELECT * FROM PROTOTYPE
+--------------
+
++--------------+--------------------------+--------------+-------+
+| PROTOTYPE_NO | PROTONAME                | CATEGORY     | PRICE |
++--------------+--------------------------+--------------+-------+
+| 0008         | MAXチーズピザ            | ピザ         |  3000 |
+| 0009         | 夏野菜ピザ               | ピザ         |  2500 |
+| 9003         | ミックスジュース         | ドリンク     |   200 |
++--------------+--------------------------+--------------+-------+
+3 rows in set (0.00 sec)
+
+--------------
+UPDATE RECIPE SET PRODUCT_NO = '0008' WHERE PRODUCT_NO = '9001'
+--------------
+
+Query OK, 7 rows affected (0.00 sec)
+Rows matched: 7  Changed: 7  Warnings: 0
+
+--------------
+UPDATE RECIPE SET PRODUCT_NO = '0009' WHERE PRODUCT_NO = '9002'
+--------------
+
+Query OK, 9 rows affected (0.00 sec)
+Rows matched: 9  Changed: 9  Warnings: 0
+
+--------------
+SELECT * FROM RECIPE WHERE  PRODUCT_NO  BETWEEN '0008'AND '0009'
+--------------
+
++------------+-------------+----------+
+| PRODUCT_NO | MATERIAL_NO | QUANTITY |
++------------+-------------+----------+
+| 0008       | 00001       |        1 |
+| 0008       | 00002       |        2 |
+| 0008       | 00003       |        2 |
+| 0008       | 00004       |        2 |
+| 0008       | 00005       |        2 |
+| 0008       | 00023       |        1 |
+| 0009       | 00001       |        1 |
+| 0009       | 00012       |        1 |
+| 0009       | 00014       |        1 |
+| 0009       | 00015       |        1 |
+| 0009       | 00016       |        1 |
+| 0009       | 00017       |        1 |
+| 0009       | 00018       |        1 |
+| 0009       | 00019       |        1 |
+| 0009       | 00021       |        1 |
+| 0008       | 00024       |        1 |
++------------+-------------+----------+
+16 rows in set (0.00 sec)
+
+--------------
+INSERT  INTO PRODUCT( PRODUCT_NO,  PNAME,  CATEGORY,  PRICE )
+SELECT PROTOTYPE_NO , PROTONAME , CATEGORY , PRICE FROM PROTOTYPE
+WHERE PROTOTYPE_NO = '0008'
+--------------
+
+Query OK, 1 row affected (0.00 sec)
+Records: 1  Duplicates: 0  Warnings: 0
+
+--------------
+INSERT  INTO PRODUCT( PRODUCT_NO,  PNAME,  CATEGORY,  PRICE )
+SELECT PROTOTYPE_NO , PROTONAME , CATEGORY , PRICE FROM PROTOTYPE
+WHERE PROTOTYPE_NO = '0009'
+--------------
+
+Query OK, 1 row affected (0.00 sec)
+Records: 1  Duplicates: 0  Warnings: 0
+
+--------------
+SELECT * FROM PRODUCT WHERE  PRODUCT_NO  BETWEEN '0008'AND '0009'
+--------------
+
++------------+--------------------+----------+-------+
+| PRODUCT_NO | PNAME              | CATEGORY | PRICE |
++------------+--------------------+----------+-------+
+| 0008       | MAXチーズピザ      | ピザ     |  3000 |
+| 0009       | 夏野菜ピザ         | ピザ     |  2500 |
++------------+--------------------+----------+-------+
+2 rows in set (0.00 sec)
+
+--------------
+DELETE FROM PROTOTYPE WHERE PROTOTYPE_NO in ('0008','0009')
+--------------
+
+Query OK, 2 rows affected (0.00 sec)
+
+--------------
+SELECT * FROM PROTOTYPE
+--------------
+
++--------------+--------------------------+--------------+-------+
+| PROTOTYPE_NO | PROTONAME                | CATEGORY     | PRICE |
++--------------+--------------------------+--------------+-------+
+| 9003         | ミックスジュース         | ドリンク     |   200 |
++--------------+--------------------------+--------------+-------+
+1 row in set (0.00 sec)
+
+--------------
+COMMIT
+--------------
+
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> notee

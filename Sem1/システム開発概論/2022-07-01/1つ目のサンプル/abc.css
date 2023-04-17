@@ -1,0 +1,15 @@
+html{
+    background-color: rgb(253, 70, 222);
+    background-image: url(./1c2d7977.jpg);
+    background-size: cover;
+}
+form{
+    font-size: 20px;
+}
+img{
+    border: 5px solid #fff;
+    border-radius: 5px;
+}
+table{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

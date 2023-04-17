@@ -1,0 +1,4 @@
+#publicBサブネットへのアクセスのために、ルートテーブルでサブネットの追加が必要
+sudo yum install -y httpd
+sudo amazon-linux-extras install -y php7.4
+sudo systemctl start httpd

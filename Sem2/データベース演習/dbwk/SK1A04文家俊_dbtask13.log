@@ -1,0 +1,172 @@
+
+/*
+データベース演習I 課題13
+クラス：SK1A04
+制作者：文家俊
+作成日：2023/02/02
+*/
+
+
+mysql> source database13.sql
+--------------
+CREATE INDEX STO_STA_IDX ON STORE ( STATUS )
+--------------
+
+Query OK, 0 rows affected (0.07 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+--------------
+SHOW INDEX FROM STORE
+--------------
+
++-------+------------+-------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+------------+
+| Table | Non_unique | Key_name    | Seq_in_index | Column_name | Collation | Cardinality | Sub_part | Packed | Null | Index_type | Comment | Index_comment | Visible | Expression |
++-------+------------+-------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+------------+
+| store |          0 | PRIMARY     |            1 | STORE_NO    | A         |           5 |     NULL |   NULL |      | BTREE      |         |               | YES     | NULL       |
+| store |          0 | TEL         |            1 | TEL         | A         |           5 |     NULL |   NULL | YES  | BTREE      |         |               | YES     | NULL       |
+| store |          1 | STO_STA_IDX |            1 | STATUS      | A         |           3 |     NULL |   NULL |      | BTREE      |         |               | YES     | NULL       |
++-------+------------+-------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+------------+
+3 rows in set (0.01 sec)
+
+--------------
+CREATE INDEX EMP_HIR_IDX ON EMPLOYEE ( HIREDATE )
+--------------
+
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+--------------
+CREATE INDEX EMP_SAL_IDX ON EMPLOYEE ( SALARY )
+--------------
+
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+--------------
+SHOW INDEX FROM EMPLOYEE
+--------------
+
++----------+------------+-------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+------------+
+| Table    | Non_unique | Key_name    | Seq_in_index | Column_name | Collation | Cardinality | Sub_part | Packed | Null | Index_type | Comment | Index_comment | Visible | Expression |
++----------+------------+-------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+------------+
+| employee |          0 | PRIMARY     |            1 | EMP_NO      | A         |          18 |     NULL |   NULL |      | BTREE      |         |               | YES     | NULL       |
+| employee |          0 | TEL         |            1 | TEL         | A         |          18 |     NULL |   NULL |      | BTREE      |         |               | YES     | NULL       |
+| employee |          1 | WORK_STORE  |            1 | WORK_STORE  | A         |           5 |     NULL |   NULL | YES  | BTREE      |         |               | YES     | NULL       |
+| employee |          1 | JOB_NO      |            1 | JOB_NO      | A         |           4 |     NULL |   NULL | YES  | BTREE      |         |               | YES     | NULL       |
+| employee |          1 | EMP_HIR_IDX |            1 | HIREDATE    | A         |          13 |     NULL |   NULL | YES  | BTREE      |         |               | YES     | NULL       |
+| employee |          1 | EMP_SAL_IDX |            1 | SALARY      | A         |           9 |     NULL |   NULL |      | BTREE      |         |               | YES     | NULL       |
++----------+------------+-------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+---------+------------+
+6 rows in set (0.02 sec)
+
+--------------
+CREATE INDEX PRODUCT_CATEGORY_INX ON product ( CATEGORY )
+--------------
+
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+--------------
+ALTER TABLE SIZE ADD FOREIGN KEY ( CATEGORY ) REFERENCES product ( CATEGORY )
+--------------
+
+Query OK, 6 rows affected (0.10 sec)
+Records: 6  Duplicates: 0  Warnings: 0
+
+--------------
+SHOW CREATE TABLE SIZE
+--------------
+
++-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Table | Create Table                                                                                                                                                                                                                                                                                                                                                            |
++-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| SIZE  | CREATE TABLE `size` (
+  `CATEGORY` varchar(4) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `SIZE` char(1) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `DIFF` int NOT NULL DEFAULT '0',
+  PRIMARY KEY (`CATEGORY`,`SIZE`),
+  CONSTRAINT `size_ibfk_1` FOREIGN KEY (`CATEGORY`) REFERENCES `product` (`CATEGORY`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci |
++-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+1 row in set (0.00 sec)
+
+--------------
+CREATE VIEW RECIPEVIEW AS 
+	SELECT P.PRODUCT_NO,P.PNAME,M.MNAME,R.QUANTITY
+    FROM PRODUCT AS P
+    JOIN RECIPE AS R ON ( P.PRODUCT_NO = R.PRODUCT_NO )
+    JOIN MATERIAL AS M ON ( R.MATERIAL_NO = M.MATERIAL_NO )
+--------------
+
+Query OK, 0 rows affected (0.01 sec)
+
+--------------
+SHOW COLUMNS FROM RECIPEVIEW
+--------------
+
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| PRODUCT_NO | char(4)     | NO   |     | NULL    |       |
+| PNAME      | varchar(50) | YES  |     | NULL    |       |
+| MNAME      | varchar(50) | NO   |     | NULL    |       |
+| QUANTITY   | int         | NO   |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+--------------
+SELECT * FROM RECIPEVIEW WHERE PRODUCT_NO = '0009'
+--------------
+
++------------+-----------------+-----------------------+----------+
+| PRODUCT_NO | PNAME           | MNAME                 | QUANTITY |
++------------+-----------------+-----------------------+----------+
+| 0009       | 夏野菜ピザ      | チーズ                |        1 |
+| 0009       | 夏野菜ピザ      | バジル                |        1 |
+| 0009       | 夏野菜ピザ      | トマト                |        1 |
+| 0009       | 夏野菜ピザ      | ピーマン              |        1 |
+| 0009       | 夏野菜ピザ      | オニオン              |        1 |
+| 0009       | 夏野菜ピザ      | アスパラガス          |        1 |
+| 0009       | 夏野菜ピザ      | コーン                |        1 |
+| 0009       | 夏野菜ピザ      | ナス                  |        1 |
+| 0009       | 夏野菜ピザ      | ホワイトソース        |        1 |
++------------+-----------------+-----------------------+----------+
+9 rows in set (0.00 sec)
+
+--------------
+CREATE VIEW EMPVIEW AS
+	SELECT S.SNAME , J.JNAME , R.RANK_NAME , E.ENAME
+	FROM STORE AS S
+	JOIN EMPLOYEE AS E ON ( S.STORE_NO = E.WORK_STORE)
+	JOIN JOB AS J ON ( J.JOB_NO = E.JOB_NO )
+	JOIN RANKPOINT AS R ON ( E.RANK_POINT >= R.LO_POINT AND E.RANK_POINT < R.HI_POINT )
+--------------
+
+Query OK, 0 rows affected (0.01 sec)
+
+--------------
+SHOW COLUMNS FROM EMPVIEW
+--------------
+
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| SNAME     | varchar(20) | NO   |     | NULL    |       |
+| JNAME     | varchar(4)  | NO   |     | NULL    |       |
+| RANK_NAME | varchar(6)  | NO   |     | NULL    |       |
+| ENAME     | varchar(20) | NO   |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+--------------
+SELECT * FROM EMPVIEW WHERE SNAME = '尼崎店'
+--------------
+
++-----------+--------+--------------+--------------+
+| SNAME     | JNAME  | RANK_NAME    | ENAME        |
++-----------+--------+--------------+--------------+
+| 尼崎店    | 調理   | ビギナー     | 秋山賢太     |
+| 尼崎店    | 店長   | ミドル       | 山名文和     |
++-----------+--------+--------------+--------------+
+2 rows in set (0.00 sec)
+
+mysql> notee

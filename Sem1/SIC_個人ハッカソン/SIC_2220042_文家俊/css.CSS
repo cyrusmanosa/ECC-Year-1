@@ -1,0 +1,168 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+}
+.Title{
+    color :red;
+    font-size: 40px;
+    padding: 15px;
+    text-align: center;
+}
+.bar a {
+    float: left;
+    font-size:20px;
+    color: red;
+    padding: 11px 15px;
+}
+.bar{
+    overflow: hidden;
+    background-color: #333;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropbtn{
+    font-size: 20px;
+}
+.dropdown .dropbtn{
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: red;
+    padding: 11px 15px;
+    background-color: inherit;
+    margin: 0;
+}
+
+.bar a:hover, 
+.dropdown:hover .dropbtn {
+    background-color: rgb(114, 114, 114);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 11px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: rgb(114, 114, 114);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#SearchBox {
+    text-align: center;
+    color: red;
+    padding: 11px 15px;
+    font-size: 12px;
+}
+
+#indexBG {
+    display: grid;
+    justify-content: center;
+}
+
+footer {
+    font-size: 12px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: rgb(114, 114, 114);
+    text-align: center;
+}
+
+.Login_all{
+    padding: 54px;
+    text-align: center;
+    font-size: 35px;
+}       
+
+.LoginForm {
+    font-size: 15px;
+    margin: 10px;
+}
+
+.index_photo{
+    display: flex;
+    justify-content: center;
+}
+
+.heigh{
+    padding: 200px;
+}
+
+#about{
+    text-align: center;
+    padding: 100px;
+    font-size: 50px;
+}
+
+#BG{
+    text-align: center;
+}
+
+.All_Product_info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.Product_info_photo{
+    text-align: center;
+}
+
+.Product_info_name{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 15px;
+    margin-left: 20px;
+}
+
+.buyBtn{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.allorder{
+    text-align: center;
+    padding: 100px;
+}
+
+.allorder h1{
+    color: red;
+}
+
+.Order{
+    text-align: center;
+    margin: 100px 0;
+}
+.Order h2{
+    margin-top: 10px;
+}

@@ -1,0 +1,55 @@
+/*-- SIC Java制作トレーニング DB構築スクリプト */
+-- データベース削除
+DROP DATABASE typingdb;
+
+-- ハイスコア登録用DB作成（DB名：typingdb）
+CREATE DATABASE typingdb;
+
+-- データベース移動
+USE typingdb;
+
+
+/*---------------以下テーブル作成----------------------*/
+
+-- ハイスコア表
+CREATE TABLE HIGHSCORE(
+    RANK_NO int,
+    SCORE int NOT NULL,
+    PRIMARY KEY(RANK_NO)
+);
+
+-- 問題表
+CREATE TABLE QUESTION(
+    Q_NO  CHAR(4),
+    Q_STR VARCHAR(30) NOT NULL,
+    PRIMARY KEY(Q_NO)
+);
+
+-- 解答表
+CREATE TABLE ANSWER(
+    A_NO  CHAR(4),
+    Q_NO  CHAR(4) NOT NULL,
+    A_STR VARCHAR(150) NOT NULL,
+    PRIMARY KEY(A_NO),
+    FOREIGN KEY(Q_NO) REFERENCES QUESTION(Q_NO)
+);
+
+/*---------------以下仮データ挿入----------------------*/
+-- ハイスコア表
+INSERT INTO HIGHSCORE (RANK_NO, SCORE) VALUES (1, 70);
+INSERT INTO HIGHSCORE (RANK_NO, SCORE) VALUES (2, 50);
+INSERT INTO HIGHSCORE (RANK_NO, SCORE) VALUES (3, 30);
+INSERT INTO HIGHSCORE (RANK_NO, SCORE) VALUES (4, 20);
+INSERT INTO HIGHSCORE (RANK_NO, SCORE) VALUES (5, 10);
+
+-- 問題表
+INSERT INTO QUESTION (Q_NO, Q_STR) VALUES ('0001', '春');
+INSERT INTO QUESTION (Q_NO, Q_STR) VALUES ('0002', '夏');
+INSERT INTO QUESTION (Q_NO, Q_STR) VALUES ('0003', '秋');
+INSERT INTO QUESTION (Q_NO, Q_STR) VALUES ('0004', '冬');
+
+-- 解答表
+INSERT INTO ANSWER (A_NO, Q_NO, A_STR) VALUES ('0001', '0001', 'haru');
+INSERT INTO ANSWER (A_NO, Q_NO, A_STR) VALUES ('0002', '0002', 'natsu');
+INSERT INTO ANSWER (A_NO, Q_NO, A_STR) VALUES ('0003', '0003', 'aki');
+INSERT INTO ANSWER (A_NO, Q_NO, A_STR) VALUES ('0004', '0004', 'fuyu');
