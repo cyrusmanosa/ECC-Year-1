@@ -1,21 +1,23 @@
+package J1Kadai06;
+
 import java.util.Scanner;
 class JKad06S1{
 	public static void main(String[] args){
 		Scanner in = new Scanner(System.in);
 
-		System.out.print("‚Ğ‚Æ‚Â‚ß‚Ì®”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢„");
+		System.out.print("ï¿½Ğ‚Æ‚Â‚ß‚Ìï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		int n1 = in.nextInt();
 		
-		System.out.print("‚Ó‚½‚Â‚ß‚Ì®”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢„");
+		System.out.print("ï¿½Ó‚ï¿½ï¿½Â‚ß‚Ìï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		int n2 = in.nextInt();
 		
-		System.out.println("‚Ì‚Ñ‘¾‚ªŒvZ‚µ‚Ü‚·I");
+		System.out.println("ï¿½Ì‚Ñ‘ï¿½ï¿½ï¿½ï¿½vï¿½Zï¿½ï¿½ï¿½Ü‚ï¿½ï¿½I");
 		int a1 = n1 / n2;
-		System.out.println("u" + n1 + "€" + n2 + "‚Í" + a1 + "‚Å‚·Iv");
+		System.out.println("ï¿½u" + n1 + "ï¿½ï¿½" + n2 + "ï¿½ï¿½" + a1 + "ï¿½Å‚ï¿½ï¿½Iï¿½v");
 		
-		System.out.println("o–Ø™‚­‚ñ‚ªŒvZ‚µ‚Ü‚·I");
+		System.out.println("ï¿½oï¿½Øï¿½ï¿½ï¿½ï¿½ñ‚ªŒvï¿½Zï¿½ï¿½ï¿½Ü‚ï¿½ï¿½I");
 		double a2 = (double)n1 / (double)n2;
-		System.out.println("u" + n1 + "€" + n2 + "‚Í" + a2 + "‚Å‚·Iv");
+		System.out.println("ï¿½u" + n1 + "ï¿½ï¿½" + n2 + "ï¿½ï¿½" + a2 + "ï¿½Å‚ï¿½ï¿½Iï¿½v");
 		
 		in.close();
 	}

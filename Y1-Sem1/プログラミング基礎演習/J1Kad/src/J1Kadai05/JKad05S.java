@@ -1,16 +1,18 @@
+package J1Kadai05;
+
 class JKad05S{
 	public static void main(String[] args){
 		double a = Math.random();
-		System.out.println("æ“¾‚µ‚½—”" + a);
+		System.out.println("ï¿½æ“¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" + a);
 		
 		double b = ((double)Math.round(a * 10))/10;
-		System.out.println("¬”‘æ1 ˆÊ‚ÅlÌŒÜ“ü" + b);
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1 ï¿½Ê‚Ålï¿½ÌŒÜ“ï¿½" + b);
 		
 		double c = ((double)Math.round(a * 100))/100;
-		System.out.println("¬”‘æ2 ˆÊ‚ÅlÌŒÜ“ü" + c);
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2 ï¿½Ê‚Ålï¿½ÌŒÜ“ï¿½" + c);
 		
 
 		double d = ((double)Math.round(a * 1000))/1000;
-		System.out.println("¬”‘æ3 ˆÊ‚ÅlÌŒÜ“ü" + d);
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3 ï¿½Ê‚Ålï¿½ÌŒÜ“ï¿½" + d);
 	}
 }

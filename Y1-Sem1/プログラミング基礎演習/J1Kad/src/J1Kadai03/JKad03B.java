@@ -1,32 +1,34 @@
+package J1Kadai03;
+
 public class JKad03B{
 	public static void main(String[] args){
-		final int COFFEE = 290;      // ƒR[ƒq[‚Ì’l’i
-		final int DONUT = 250;       // ƒh[ƒiƒc‚Ì’l’i
-		final int SALAD = 380;       //  ƒTƒ‰ƒ_‚Ì’l’i
-		final int CAKE = 420;        // ƒP[ƒL‚Ì’l’i
+		final int COFFEE = 290;      // ï¿½Rï¿½[ï¿½qï¿½[ï¿½Ì’lï¿½i
+		final int DONUT = 250;       // ï¿½hï¿½[ï¿½iï¿½cï¿½Ì’lï¿½i
+		final int SALAD = 380;       //  ï¿½Tï¿½ï¿½ï¿½_ï¿½Ì’lï¿½i
+		final int CAKE = 420;        // ï¿½Pï¿½[ï¿½Lï¿½Ì’lï¿½i
 		int price=0;
 		int TAX = 10;
 	
-		System.out.println("‚æ‚¤‚±‚»IECC ƒR[ƒq[‚Ö");
-		System.out.println("‚±‚¿‚ç‚Å‚¨¢‚µã‚ª‚è‚Å‚·‚ËI");
+		System.out.println("ï¿½æ‚¤ï¿½ï¿½ï¿½ï¿½ï¿½IECC ï¿½Rï¿½[ï¿½qï¿½[ï¿½ï¿½");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ã‚ªï¿½ï¿½Å‚ï¿½ï¿½ËI");
 		System.out.println("--------");
 		
 		price += COFFEE;
-		System.out.println("ƒR[ƒq[\t" + COFFEE + "‰~\t" + "¬ŒvF" + price + "‰~");
+		System.out.println("ï¿½Rï¿½[ï¿½qï¿½[\t" + COFFEE + "ï¿½~\t" + "ï¿½ï¿½ï¿½vï¿½F" + price + "ï¿½~");
 		
 		price += DONUT;
-		System.out.println("‚³‚­‚çƒh[ƒiƒc\t" + DONUT + "‰~\t" + "¬ŒvF" + price + "‰~");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½hï¿½[ï¿½iï¿½c\t" + DONUT + "ï¿½~\t" + "ï¿½ï¿½ï¿½vï¿½F" + price + "ï¿½~");
 		
 		price += SALAD;
-		System.out.println("ƒ`ƒLƒ“ƒTƒ‰ƒ_\t" + SALAD + "‰~\t" + "¬ŒvF" + price + "‰~");
+		System.out.println("ï¿½`ï¿½Lï¿½ï¿½ï¿½Tï¿½ï¿½ï¿½_\t" + SALAD + "ï¿½~\t" + "ï¿½ï¿½ï¿½vï¿½F" + price + "ï¿½~");
 		
 		price += CAKE;
-		System.out.println("ƒ`[ƒYƒP[ƒL\t" + CAKE + "‰~\t" + "¬ŒvF" + price + "‰~");
+		System.out.println("ï¿½`ï¿½[ï¿½Yï¿½Pï¿½[ï¿½L\t" + CAKE + "ï¿½~\t" + "ï¿½ï¿½ï¿½vï¿½F" + price + "ï¿½~");
 		
 		System.out.println("--------");
 		
-		System.out.println("Á”ïÅ‚ª" + (price/TAX) + "‰~‚Åx•¥‹àŠz‚Í" + (price + (price/TAX)) + "‰~‚É‚È‚è‚Ü‚·I");
-		System.out.println("‚ ‚è‚ª‚Æ‚¤‚²‚´‚¢‚Ü‚µ‚½I");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½Å‚ï¿½" + (price/TAX) + "ï¿½~ï¿½Åxï¿½ï¿½ï¿½ï¿½ï¿½zï¿½ï¿½" + (price + (price/TAX)) + "ï¿½~ï¿½É‚È‚ï¿½Ü‚ï¿½ï¿½I");
+		System.out.println("ï¿½ï¿½ï¿½è‚ªï¿½Æ‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½I");
 		System.out.println("");
 	}
 }

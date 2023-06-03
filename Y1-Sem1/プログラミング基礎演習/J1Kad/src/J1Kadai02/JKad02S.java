@@ -1,3 +1,5 @@
+package J1Kadai02;
+
 class JKad02S{
 	public static void main(String[] args){
 		int x;
@@ -6,16 +8,16 @@ class JKad02S{
 		y=7;
 		int z;
 		z=x;
-		System.out.println("x ‚Ì’l‚Í");
+		System.out.println("x ï¿½Ì’lï¿½ï¿½");
 		System.out.println(x);
-		System.out.println("y ‚Ì’l‚Í");
+		System.out.println("y ï¿½Ì’lï¿½ï¿½");
 		System.out.println(y);
-		System.out.println("*** x ‚Æy ‚Ì’l‚ğ“ü‚ê‘Ö‚¦‚Ü‚·I ***");
+		System.out.println("*** x ï¿½ï¿½y ï¿½Ì’lï¿½ï¿½ï¿½ï¿½ï¿½Ö‚ï¿½ï¿½Ü‚ï¿½ï¿½I ***");
 		x=y;
-		System.out.println("x ‚Ì’l‚Í");
+		System.out.println("x ï¿½Ì’lï¿½ï¿½");
 		System.out.println(x);
 		y=z;
-		System.out.println("y ‚Ì’l‚Í");
+		System.out.println("y ï¿½Ì’lï¿½ï¿½");
 		System.out.println(y);
 	}
 }

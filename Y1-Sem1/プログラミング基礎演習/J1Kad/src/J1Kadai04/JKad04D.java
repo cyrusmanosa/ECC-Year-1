@@ -1,7 +1,9 @@
+package J1Kadai04;
+
 class JKad04D{
 	public static void main(String[] args){
-		String message1 = "‚±‚ñ‚É‚¿‚ÍI";
-		String message2 = "¡“ú‚Í‚æ‚¢“V‹C‚Å‚·‚ËI";
+		String message1 = "ï¿½ï¿½ï¿½ï¿½É‚ï¿½ï¿½ÍI";
+		String message2 = "ï¿½ï¿½ï¿½ï¿½ï¿½Í‚æ‚¢ï¿½Vï¿½Cï¿½Å‚ï¿½ï¿½ËI";
 		String message3 = message1+message2;
 		System.out.println(message1);
 		System.out.println(message3);

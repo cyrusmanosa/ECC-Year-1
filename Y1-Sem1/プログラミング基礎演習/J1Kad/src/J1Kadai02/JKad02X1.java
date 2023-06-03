@@ -1,3 +1,5 @@
+package J1Kadai02;
+
 class JKad02X1{
 	public static void main(String[]args){
 		int sum;
@@ -5,8 +7,8 @@ class JKad02X1{
 		for(int i=1;i<=10;i++){
 			sum+=i;
 			}
-		System.out.println("1 ‚©‚ç10 ‚Ü‚Å‰ÁŽZ‚µ‚Ü‚·I");
-		System.out.println("Œ‹‰Ê‚Í");
+		System.out.println("1 ï¿½ï¿½ï¿½ï¿½10 ï¿½Ü‚Å‰ï¿½ï¿½Zï¿½ï¿½ï¿½Ü‚ï¿½ï¿½I");
+		System.out.println("ï¿½ï¿½ï¿½Ê‚ï¿½");
 		System.out.println(sum);
 		
 	}

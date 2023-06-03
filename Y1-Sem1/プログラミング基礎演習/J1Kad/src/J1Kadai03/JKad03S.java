@@ -1,8 +1,10 @@
+package J1Kadai03;
+
 public class JKad03S{
 	public static void main(String[] args){
 		int i=1;
 		int j=1;
-		// ¶Š‰Ei‰Á1,i‰Á2,i‰Á3,i‰Á4
+		// ï¿½ï¿½ï¿½ï¿½ï¿½Eiï¿½ï¿½1,iï¿½ï¿½2,iï¿½ï¿½3,iï¿½ï¿½4
 		System.out.println("\t" + (j*i++) + "\t" + (j*i++) + "\t" + (j*i++) + "\t" + (j*i++) + "\t" + (j*i++) + "\t" + (j*i++) + "\t" + (j*i++) + "\t" + (j*i++) + "\t" + (j*i++));
 		j++;
 		i=1;

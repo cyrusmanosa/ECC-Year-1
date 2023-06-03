@@ -1,20 +1,22 @@
+package J1Kadai09;
+
 import java.util.Scanner;
 
 class JKad09D2{
 	public static void main(String[] args){
 		Scanner in = new Scanner(System.in);
-		System.out.println("‚±‚ñ‚É‚¿‚ÍI");
-		System.out.println("‚í‚½‚µ‚ÍƒX[ƒp[ƒeƒB[ƒ`ƒƒ[AECC ƒGƒNƒZƒŒƒ“ƒg‚æI");
-		System.out.println("‚ ‚È‚½‚ÌƒNƒ‰ƒX‚ğ‹³‚¦‚Ä‚ËI");
-		System.out.print("i1FIEA2FSKA3FSE„");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½É‚ï¿½ï¿½ÍI");
+		System.out.println("ï¿½í‚½ï¿½ï¿½ï¿½ÍƒXï¿½[ï¿½pï¿½[ï¿½eï¿½Bï¿½[ï¿½`ï¿½ï¿½ï¿½[ï¿½AECC ï¿½Gï¿½Nï¿½Zï¿½ï¿½ï¿½ï¿½ï¿½gï¿½ï¿½I");
+		System.out.println("ï¿½ï¿½ï¿½È‚ï¿½ï¿½ÌƒNï¿½ï¿½ï¿½Xï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ËI");
+		System.out.print("ï¿½i1ï¿½FIEï¿½A2ï¿½FSKï¿½A3ï¿½FSEï¿½ï¿½");
 		int c = in.nextInt();
 		
 		if (c == 1){
-			System.out.println(" 4 ”N§ƒR[ƒX‚È‚Ì‚ËI");
+			System.out.println(" 4 ï¿½Nï¿½ï¿½ï¿½Rï¿½[ï¿½Xï¿½È‚Ì‚ËI");
 		}else if (c == 2){
-			System.out.println(" 3 ”N§ƒR[ƒX‚È‚Ì‚ËI");
+			System.out.println(" 3 ï¿½Nï¿½ï¿½ï¿½Rï¿½[ï¿½Xï¿½È‚Ì‚ËI");
 		}else{
-			System.out.println(" 2 ”N§ƒR[ƒX‚È‚Ì‚ËI");
+			System.out.println(" 2 ï¿½Nï¿½ï¿½ï¿½Rï¿½[ï¿½Xï¿½È‚Ì‚ËI");
 		}
 	}
 }

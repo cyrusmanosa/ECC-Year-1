@@ -1,13 +1,15 @@
+package J1Kadai05;
+
 import java.util.Scanner;
 class JKad05A{
 	public static void main(String[] args){
 		Scanner in = new Scanner(System.in);
-		System.out.print("”¼Œa‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢");
+		System.out.print("ï¿½ï¿½ï¿½aï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		
 		double r = in.nextDouble();
 		double a = 4 * 3.14 * (r * r);
 		double b = (4 * 3.14 * (r * r * r))/3;
 		
-		System.out.println("”¼Œa" + r + "‚Ì‹…‚Ì•\–ÊÏ‚Í" + a + "A‘ÌÏ‚Í" + b + " ‚Å‚·I");
+		System.out.println("ï¿½ï¿½ï¿½a" + r + "ï¿½Ì‹ï¿½ï¿½Ì•\ï¿½ÊÏ‚ï¿½" + a + "ï¿½Aï¿½ÌÏ‚ï¿½" + b + " ï¿½Å‚ï¿½ï¿½I");
 	}
 }

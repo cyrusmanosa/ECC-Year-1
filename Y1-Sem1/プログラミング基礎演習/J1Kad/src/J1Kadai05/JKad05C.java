@@ -1,8 +1,10 @@
+package J1Kadai05;
+
 class JKad05C{
 	public static void main(String[] args){
 		double r = 5;
 		double area = r * r * 3.14;
-		System.out.println("”¼Œa" + r + "‚Ì‰~‚Ì–ÊÏ‚Í" + area + "‚Å‚·I");
+		System.out.println("ï¿½ï¿½ï¿½a" + r + "ï¿½Ì‰~ï¿½Ì–ÊÏ‚ï¿½" + area + "ï¿½Å‚ï¿½ï¿½I");
 	}
 }
 

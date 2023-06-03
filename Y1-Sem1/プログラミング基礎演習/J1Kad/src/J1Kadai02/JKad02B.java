@@ -1,27 +1,29 @@
+package J1Kadai02;
+
 class JKad02B{
 	public static void main(String[] args){
 		int x;
 		x=5;
-		System.out.println("•Ï”x ‚Ì’l‚ğ•\¦‚µ‚Ü‚·I");
+		System.out.println("ï¿½Ïï¿½x ï¿½Ì’lï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½I");
 		System.out.println(x);
 		
-		System.out.println("•Ï”x ‚É14 ‚ğ‘«‚µ‚Ü‚·I");
+		System.out.println("ï¿½Ïï¿½x ï¿½ï¿½14 ï¿½ğ‘«‚ï¿½ï¿½Ü‚ï¿½ï¿½I");
 		x=x+14;
 		System.out.println(x);
 		
-		System.out.println("•Ï”x ‚©‚ç3 ‚ğˆø‚«‚Ü‚·I");
+		System.out.println("ï¿½Ïï¿½x ï¿½ï¿½ï¿½ï¿½3 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½I");
 		x=x - 3;
 		System.out.println(x);
 		
-		System.out.println("•Ï”x ‚É7 ‚ğ‚©‚¯‚Ü‚·I");
+		System.out.println("ï¿½Ïï¿½x ï¿½ï¿½7 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½I");
 		x=x * 7;
 		System.out.println(x);
 		
-		System.out.println("•Ï”x ‚ğ10 ‚ÅŠ„‚è‚Ü‚·I");
+		System.out.println("ï¿½Ïï¿½x ï¿½ï¿½10 ï¿½ÅŠï¿½ï¿½ï¿½Ü‚ï¿½ï¿½I");
 		x=x/10;
 		System.out.println(x);
 		
-		System.out.println("•Ï”x ‚ğ4 ‚ÅŠ„‚Á‚½—]‚è‚ğ‹‚ß‚Ü‚·I");
+		System.out.println("ï¿½Ïï¿½x ï¿½ï¿½4 ï¿½ÅŠï¿½ï¿½ï¿½ï¿½ï¿½ï¿½]ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß‚Ü‚ï¿½ï¿½I");
 		x=x%4;
 		System.out.println(x);
 	}

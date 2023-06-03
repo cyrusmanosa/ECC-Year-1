@@ -1,3 +1,5 @@
+package J1Kadai10;
+
 import java.util.Scanner;
 
 class JKad10C1{
@@ -7,14 +9,14 @@ class JKad10C1{
 		final int SK = 2;
 		final int SE = 3;
 
-		System.out.println("‚±‚ñ‚É‚¿‚ÍI");
-		System.out.println("‚í‚½‚µ‚ÍƒX[ƒp[ƒeƒB[ƒ`ƒƒ[AECC ƒGƒNƒZƒŒƒ“ƒg‚æI");
-		System.out.print("‚ ‚È‚½‚ÌƒR[ƒX‚ğ‹³‚¦‚Ä‚ËIi1FIEA2FSKA3FSEj„");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½É‚ï¿½ï¿½ÍI");
+		System.out.println("ï¿½í‚½ï¿½ï¿½ï¿½ÍƒXï¿½[ï¿½pï¿½[ï¿½eï¿½Bï¿½[ï¿½`ï¿½ï¿½ï¿½[ï¿½AECC ï¿½Gï¿½Nï¿½Zï¿½ï¿½ï¿½ï¿½ï¿½gï¿½ï¿½I");
+		System.out.print("ï¿½ï¿½ï¿½È‚ï¿½ï¿½ÌƒRï¿½[ï¿½Xï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ËIï¿½i1ï¿½FIEï¿½A2ï¿½FSKï¿½A3ï¿½FSEï¿½jï¿½ï¿½");
 		int a = in.nextInt();
 		if (a <= 3 ) {
-			System.out.println("IT ƒJƒŒƒbƒW‚ÌŠw¶‚ËI");
+			System.out.println("IT ï¿½Jï¿½ï¿½ï¿½bï¿½Wï¿½ÌŠwï¿½ï¿½ï¿½ËI");
 		} else {
-			System.out.println("‚¿‚á‚ñ‚Æ“š‚¦‚Ä‚ËI");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Æ“ï¿½ï¿½ï¿½ï¿½Ä‚ËI");
 		}
 	}
 }

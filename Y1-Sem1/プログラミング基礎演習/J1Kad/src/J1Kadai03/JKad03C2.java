@@ -1,23 +1,25 @@
+package J1Kadai03;
+
 public class JKad03C2{
 	public static void main(String[] args){
 		int i = 0;
-		System.out.println("Œ»İ‚Ìi ‚Ì’l\t" + i);
+		System.out.println("ï¿½ï¿½ï¿½İ‚ï¿½i ï¿½Ì’l\t" + i);
 		System.out.println();
-		// ƒCƒ“ƒNƒŠƒƒ“ƒg
+		// ï¿½Cï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½g
 
-		System.out.println("i++‚Å•\¦\t" + (i++));
-		System.out.println("Œ»İ‚Ìi ‚Ì’l\t" + i);
+		System.out.println("i++ï¿½Å•\ï¿½ï¿½\t" + (i++));
+		System.out.println("ï¿½ï¿½ï¿½İ‚ï¿½i ï¿½Ì’l\t" + i);
 		System.out.println();
-		System.out.println("++i ‚Å•\¦\t" + (++i));
-		System.out.println("Œ»İ‚Ìi ‚Ì’l\t" + i);
+		System.out.println("++i ï¿½Å•\ï¿½ï¿½\t" + (++i));
+		System.out.println("ï¿½ï¿½ï¿½İ‚ï¿½i ï¿½Ì’l\t" + i);
 		System.out.println();
 		
-		// ƒfƒNƒŠƒƒ“ƒg
-		System.out.println("i--‚Å•\¦\t" + (i--));
-		System.out.println("Œ»İ‚Ìi ‚Ì’l\t" + i);
+		// ï¿½fï¿½Nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½g
+		System.out.println("i--ï¿½Å•\ï¿½ï¿½\t" + (i--));
+		System.out.println("ï¿½ï¿½ï¿½İ‚ï¿½i ï¿½Ì’l\t" + i);
 		System.out.println();
-		System.out.println("--i ‚Å•\¦\t" + (--i));
-		System.out.println("Œ»İ‚Ìi ‚Ì’l\t" + i);
+		System.out.println("--i ï¿½Å•\ï¿½ï¿½\t" + (--i));
+		System.out.println("ï¿½ï¿½ï¿½İ‚ï¿½i ï¿½Ì’l\t" + i);
 		System.out.println();
 	}
 }

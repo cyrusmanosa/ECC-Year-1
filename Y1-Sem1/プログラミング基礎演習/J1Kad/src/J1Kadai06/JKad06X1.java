@@ -1,32 +1,34 @@
+package J1Kadai06;
+
 import java.util.Scanner;
 
 class JKad06X1{
 	public static void main(String[]args){
 		Scanner in = new Scanner(System.in);
-		System.out.println("‚±‚ñ‚É‚¿‚ÍI");
-		System.out.println("‚í‚½‚µ‚Íè‚¢ƒ}ƒV[ƒ“‚ÌECC1000 ‚æI");
-		System.out.println("‚ ‚È‚½‚Ì‚±‚Æ‚ğè‚Á‚Ä‚ ‚°‚é‚íI‚æ‚ë‚µ‚­‚Ë");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½É‚ï¿½ï¿½ÍI");
+		System.out.println("ï¿½í‚½ï¿½ï¿½ï¿½Íè‚¢ï¿½}ï¿½Vï¿½[ï¿½ï¿½ï¿½ï¿½ECC1000 ï¿½ï¿½I");
+		System.out.println("ï¿½ï¿½ï¿½È‚ï¿½ï¿½Ì‚ï¿½ï¿½Æ‚ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Iï¿½ï¿½ë‚µï¿½ï¿½ï¿½ï¿½");
 		System.out.println(" ");
 		
-		System.out.print("–¼‘O‚Í‰½‚Ä‚¢‚¤‚ÌH„");
+		System.out.print("ï¿½ï¿½ï¿½Oï¿½Í‰ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ÌHï¿½ï¿½");
 		String name = in.next();
 		
-		System.out.println("”N—î‚Í‚¢‚­‚ÂH„");
+		System.out.println("ï¿½Nï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ÂHï¿½ï¿½");
 		int age = in.nextInt();
 		
-		System.out.println(name + "‚³‚ñA‚±‚ñ‚É‚¿‚ÍI");
-		System.out.println("‚ ‚È‚½‚Í" + age + "Î‚È‚ñ‚Å‚·‚ËI");
+		System.out.println(name + "ï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½É‚ï¿½ï¿½ÍI");
+		System.out.println("ï¿½ï¿½ï¿½È‚ï¿½ï¿½ï¿½" + age + "ï¿½Î‚È‚ï¿½Å‚ï¿½ï¿½ËI");
 		System.out.println(" ");
 		
-		System.out.println(name + "‚³‚ñ‚Ì¡“ú‚Ì‰^¨‚Í");
+		System.out.println(name + "ï¿½ï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½ï¿½Ì‰^ï¿½ï¿½ï¿½ï¿½");
 		int c = (int)(Math.random()*99) + 1;
 		int d = (int)(Math.random()*99) + 1;
 		int e = (int)(Math.random()*99) + 1;
-		System.out.println("ƒ‰ƒu‰^" + c);
-		System.out.println("‹à‘K‰^" + d);
-		System.out.println("‘S‘Ì‰^" + e);
+		System.out.println("ï¿½ï¿½ï¿½uï¿½^" + c);
+		System.out.println("ï¿½ï¿½ï¿½Kï¿½^" + d);
+		System.out.println("ï¿½Sï¿½Ì‰^" + e);
 		System.out.println(" ");
 		
-		System.out.println("‚Ü‚½—ˆ‚Ä‚ËI");
+		System.out.println("ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½Ä‚ËI");
 	}
 }

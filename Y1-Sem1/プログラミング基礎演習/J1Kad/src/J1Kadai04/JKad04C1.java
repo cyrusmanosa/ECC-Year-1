@@ -1,19 +1,21 @@
+package J1Kadai04;
+
 import java.util.Scanner;
 class JKad04C1{
 	public static void main(String[] args){
 		String name;
 		
 		Scanner in = new Scanner(System.in);
-		System.out.println("‚ ‚È‚½‚Ì‚¨–¼‘O‚ÍH„");
+		System.out.println("ï¿½ï¿½ï¿½È‚ï¿½ï¿½Ì‚ï¿½ï¿½ï¿½ï¿½Oï¿½ÍHï¿½ï¿½");
 		
 		name = in.next();
 		
-		System.out.println("ecc ‚³‚ñA‚±‚ñ‚É‚¿‚ÍI");
+		System.out.println("ecc ï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½É‚ï¿½ï¿½ÍI");
 		
 		int age;
-		System.out.println("”N—î‚Í‚¢‚­‚ÂH„");
+		System.out.println("ï¿½Nï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ÂHï¿½ï¿½");
 		age = in.nextInt();
-		System.out.println(age + "Î‚È‚Ì‚ËI");
+		System.out.println(age + "ï¿½Î‚È‚Ì‚ËI");
 	}
 }
 		

@@ -1,4 +1,4 @@
-package pac11;
+package J1Kadai11;
 
 import java.util.Scanner;
 public class JKad11S {

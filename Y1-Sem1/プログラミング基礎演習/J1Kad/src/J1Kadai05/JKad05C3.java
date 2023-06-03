@@ -1,6 +1,8 @@
+package J1Kadai05;
+
 class JKad05C3{
 	public static void main(String[] args){
-		System.out.println("*** doubleŒ^‚É0.1‚¸‚Â‰ÁZ‚µ‚Ä‚¢‚«‚Ü‚·I***");
+		System.out.println("*** doubleï¿½^ï¿½ï¿½0.1ï¿½ï¿½ï¿½Â‰ï¿½ï¿½Zï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½I***");
 		double d = 0.0;
 		d += 0.1;	System.out.println(d);
 		d += 0.1;	System.out.println(d);
@@ -13,7 +15,7 @@ class JKad05C3{
 		d += 0.1;	System.out.println(d);
 		d += 0.1;	System.out.println(d);
 		
-		System.out.println("*** floatŒ^‚É0.1‚¸‚Â‰ÁZ‚µ‚Ä‚¢‚«‚Ü‚·I***");
+		System.out.println("*** floatï¿½^ï¿½ï¿½0.1ï¿½ï¿½ï¿½Â‰ï¿½ï¿½Zï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½I***");
 		float f = 0.0f;
 		f += 0.1;	System.out.println(f);
 		f += 0.1;	System.out.println(f);

@@ -1,14 +1,16 @@
+package J1Kadai08;
+
 import java.util.Scanner;
 class JKad08S1{
 	public static void main(String[] args){
 		Scanner in = new Scanner(System.in);
-		System.out.println("A ‚³‚ñ‚Ì‘O‚ğ—ñÔ‚ª’Ê‰ß‚µ‚Ü‚·I");
-		System.out.print("—ñÔ‚Ì‘¬“xi‘¬j‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢„");
+		System.out.println("A ï¿½ï¿½ï¿½ï¿½Ì‘Oï¿½ï¿½ï¿½Ô‚ï¿½ï¿½Ê‰ß‚ï¿½ï¿½Ü‚ï¿½ï¿½I");
+		System.out.print("ï¿½ï¿½Ô‚Ì‘ï¿½ï¿½xï¿½iï¿½ï¿½ï¿½ï¿½ï¿½jï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		double v = in.nextDouble();
 		v = (double)((v*1000)/(60*60));
-		System.out.print("—ñÔ‚Ì’·‚³iƒ[ƒgƒ‹j‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢„");
+		System.out.print("ï¿½ï¿½Ô‚Ì’ï¿½ï¿½ï¿½ï¿½iï¿½ï¿½ï¿½[ï¿½gï¿½ï¿½ï¿½jï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		double s = in.nextDouble();
 		double t = (double)(s/v);
-		System.out.println(t + "•b‚©‚©‚è‚Ü‚·I");
+		System.out.println(t + "ï¿½bï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½I");
 	}
 }

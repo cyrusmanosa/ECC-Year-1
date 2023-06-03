@@ -1,3 +1,5 @@
+package J1Kadai04;
+
 import java.util.Scanner;
 
 class JKad04A{
@@ -9,20 +11,20 @@ class JKad04A{
 		int D;
 		
 		Scanner in = new Scanner(System.in);
-		System.out.print("‹³º”Ô†‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢„");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½Ôï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		
 		Num = in.nextInt();
-		//ç
+		//ï¿½ï¿½
 		A = (Num / 1000);
-		//•S
+		//ï¿½S
 		B = (Num % 1000)/100; 
-		//\
+		//ï¿½\
 		C = (Num % 1000)%100/10; 
-		//’P
+		//ï¿½P
 		D = (Num % 1000)%100%10;
-		System.out.println("ˆê‚ÌˆÊ" + D);
-		System.out.println("\‚ÌˆÊ" + C);
-		System.out.println("•S‚ÌˆÊ" + B);
-		System.out.println("ç‚ÌˆÊ" + A);
+		System.out.println("ï¿½ï¿½Ìˆï¿½" + D);
+		System.out.println("ï¿½\ï¿½Ìˆï¿½" + C);
+		System.out.println("ï¿½Sï¿½Ìˆï¿½" + B);
+		System.out.println("ï¿½ï¿½Ìˆï¿½" + A);
 	}
 }

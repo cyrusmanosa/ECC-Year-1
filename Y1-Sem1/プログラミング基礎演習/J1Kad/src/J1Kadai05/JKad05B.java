@@ -1,16 +1,18 @@
+package J1Kadai05;
+
 class JKad05B{
 	public static void main(String[] args){
 		final int COFFEE = 290;
-		int tax; 		//Á”ïÅi8%j
+		int tax; 		//ï¿½ï¿½ï¿½ï¿½Åi8%ï¿½j
 		int total; 
 		
-		System.out.println("‚æ‚¤‚±‚»IECC ƒR[ƒq[‚Ö");
-		System.out.println("‚¨‚¿‹A‚è‚Å‚·‚ËI");
+		System.out.println("ï¿½æ‚¤ï¿½ï¿½ï¿½ï¿½ï¿½IECC ï¿½Rï¿½[ï¿½qï¿½[ï¿½ï¿½");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½Å‚ï¿½ï¿½ËI");
 		
 		tax = (int)(COFFEE * 0.08);
 		total = COFFEE + tax;
 		
-		System.out.println("ƒR[ƒq[" + COFFEE + "‰~AÁ”ïÅ‚ª" + tax + "‰~‚Å‡Œv" + total + "‰~‚É‚È‚è‚Ü‚·I");
-		System.out.println("‚ ‚è‚ª‚Æ‚¤‚²‚´‚¢‚Ü‚µ‚½I");
+		System.out.println("ï¿½Rï¿½[ï¿½qï¿½[" + COFFEE + "ï¿½~ï¿½Aï¿½ï¿½ï¿½ï¿½Å‚ï¿½" + tax + "ï¿½~ï¿½Åï¿½ï¿½v" + total + "ï¿½~ï¿½É‚È‚ï¿½Ü‚ï¿½ï¿½I");
+		System.out.println("ï¿½ï¿½ï¿½è‚ªï¿½Æ‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½I");
 	}
 }

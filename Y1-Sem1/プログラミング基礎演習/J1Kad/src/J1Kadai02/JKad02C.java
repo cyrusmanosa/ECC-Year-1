@@ -1,21 +1,23 @@
+package J1Kadai02;
+
 class JKad02C{
 	public static void main(String[] args){
 		int a;
 		a=5;
-		System.out.println("•Ï”a ‚Ì’l‚ğ•\¦‚µ‚Ü‚·I");
+		System.out.println("ï¿½Ïï¿½a ï¿½Ì’lï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½I");
 		System.out.println(a);
 		
 		int b;
 		b=20;
-		System.out.println("•Ï”b ‚Ì’l‚ğ•\¦‚µ‚Ü‚·I");
+		System.out.println("ï¿½Ïï¿½b ï¿½Ì’lï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½I");
 		System.out.println(b);
 		
 		b=a;
-		System.out.println("•Ï”b ‚Éa ‚ğ‘ã“ü‚µ‚Ü‚·I");
+		System.out.println("ï¿½Ïï¿½b ï¿½ï¿½a ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½I");
 		System.out.println("");
-		System.out.println("•Ï”a ‚Ì’l‚ğ•\¦‚µ‚Ü‚·I");
+		System.out.println("ï¿½Ïï¿½a ï¿½Ì’lï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½I");
 		System.out.println(a);
-		System.out.println("•Ï”b ‚Ì’l‚ğ•\¦‚µ‚Ü‚·I");
+		System.out.println("ï¿½Ïï¿½b ï¿½Ì’lï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½I");
 		System.out.println(b);
 	}
 		

@@ -1,3 +1,5 @@
+package J1Kadai09;
+
 import java.util.Scanner;
 class JKad09B{
 	public static void main(String[] args){

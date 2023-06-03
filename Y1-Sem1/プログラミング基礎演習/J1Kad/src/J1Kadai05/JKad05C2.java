@@ -1,88 +1,90 @@
+package J1Kadai05;
+
 class JKad05C2{
 	public static void main(String[] args){
 		long i = 7;
 		double l = 7;
-		System.out.println("‚»‚ê‚¼‚ê16”{‚¸‚Â‚µ‚Ä‚¢‚«‚Ü‚·I");
+		System.out.println("ï¿½ï¿½ï¿½ê‚¼ï¿½ï¿½16ï¿½{ï¿½ï¿½ï¿½Â‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½I");
 		
 		System.out.println("--------------");
 		i *= 16;	l *= 16;
-		System.out.println("longŒ^: \t" + i);
-		System.out.println("doubleŒ^: \t" + l);
+		System.out.println("longï¿½^: \t" + i);
+		System.out.println("doubleï¿½^: \t" + l);
 		
 		System.out.println("--------------");
 		i *= 16;	l *= 16;
-		System.out.println("longŒ^: \t" + i);
-		System.out.println("doubleŒ^: \t" + l);
+		System.out.println("longï¿½^: \t" + i);
+		System.out.println("doubleï¿½^: \t" + l);
 		
 		System.out.println("--------------");
 		i *= 16;	l *= 16;
-		System.out.println("longŒ^: \t" + i);
-		System.out.println("doubleŒ^: \t" + l);
+		System.out.println("longï¿½^: \t" + i);
+		System.out.println("doubleï¿½^: \t" + l);
 		
 		System.out.println("--------------");
 		i *= 16;	l *= 16;
-		System.out.println("longŒ^: \t" + i);
-		System.out.println("doubleŒ^: \t" + l);
+		System.out.println("longï¿½^: \t" + i);
+		System.out.println("doubleï¿½^: \t" + l);
 		
 		System.out.println("--------------");
 		i *= 16;	l *= 16;
-		System.out.println("longŒ^: \t" + i);
-		System.out.println("doubleŒ^: \t" + l);
+		System.out.println("longï¿½^: \t" + i);
+		System.out.println("doubleï¿½^: \t" + l);
 		
 		System.out.println("--------------");
 		i *= 16;	l *= 16;
-		System.out.println("longŒ^: \t" + i);
-		System.out.println("doubleŒ^: \t" + l);
+		System.out.println("longï¿½^: \t" + i);
+		System.out.println("doubleï¿½^: \t" + l);
 		
 		System.out.println("--------------");
 		i *= 16;	l *= 16;
-		System.out.println("longŒ^: \t" + i);
-		System.out.println("doubleŒ^: \t" + l);
+		System.out.println("longï¿½^: \t" + i);
+		System.out.println("doubleï¿½^: \t" + l);
 		
 		System.out.println("--------------");
 		i *= 16;	l *= 16;
-		System.out.println("longŒ^: \t" + i);
-		System.out.println("doubleŒ^: \t" + l);
+		System.out.println("longï¿½^: \t" + i);
+		System.out.println("doubleï¿½^: \t" + l);
 		
 		System.out.println("--------------");
 		i *= 16;	l *= 16;
-		System.out.println("longŒ^: \t" + i);
-		System.out.println("doubleŒ^: \t" + l);
+		System.out.println("longï¿½^: \t" + i);
+		System.out.println("doubleï¿½^: \t" + l);
 		
 		System.out.println("--------------");
 		i *= 16;	l *= 16;
-		System.out.println("longŒ^: \t" + i);
-		System.out.println("doubleŒ^: \t" + l);
+		System.out.println("longï¿½^: \t" + i);
+		System.out.println("doubleï¿½^: \t" + l);
 		
 		System.out.println("--------------");
 		i *= 16;	l *= 16;
-		System.out.println("longŒ^: \t" + i);
-		System.out.println("doubleŒ^: \t" + l);
+		System.out.println("longï¿½^: \t" + i);
+		System.out.println("doubleï¿½^: \t" + l);
 		
 		System.out.println("--------------");
 		i *= 16;	l *= 16;
-		System.out.println("longŒ^: \t" + i);
-		System.out.println("doubleŒ^: \t" + l);
+		System.out.println("longï¿½^: \t" + i);
+		System.out.println("doubleï¿½^: \t" + l);
 		
 		System.out.println("--------------");
 		i *= 16;	l *= 16;
-		System.out.println("longŒ^: \t" + i);
-		System.out.println("doubleŒ^: \t" + l);
+		System.out.println("longï¿½^: \t" + i);
+		System.out.println("doubleï¿½^: \t" + l);
 		
 		System.out.println("--------------");
 		i *= 16;	l *= 16;
-		System.out.println("longŒ^: \t" + i);
-		System.out.println("doubleŒ^: \t" + l);
+		System.out.println("longï¿½^: \t" + i);
+		System.out.println("doubleï¿½^: \t" + l);
 		
 		System.out.println("--------------");
 		i *= 16;	l *= 16;
-		System.out.println("longŒ^: \t" + i);
-		System.out.println("doubleŒ^: \t" + l);
+		System.out.println("longï¿½^: \t" + i);
+		System.out.println("doubleï¿½^: \t" + l);
 		
 		System.out.println("--------------");
 		i *= 16;	l *= 16;
-		System.out.println("longŒ^: \t" + i);
-		System.out.println("doubleŒ^: \t" + l);
+		System.out.println("longï¿½^: \t" + i);
+		System.out.println("doubleï¿½^: \t" + l);
 		
 	}
 }

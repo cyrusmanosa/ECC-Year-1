@@ -1,41 +1,43 @@
+package J1Kadai05;
+
 class JKad05D{
 	public static void main(String[] args){
 		byte b = 1;
 		short s =1;
 		int i = 1;
 		long l = 1;
-		System.out.println("‚»‚ê‚¼‚ê16”{‚¸‚Â‚µ‚Ä‚¢‚«‚Ü‚·I");
+		System.out.println("ï¿½ï¿½ï¿½ê‚¼ï¿½ï¿½16ï¿½{ï¿½ï¿½ï¿½Â‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½I");
 		b*=16;	s*=16;	i*=16;	l*=16;
-		System.out.println("byteŒ^F" + b + "\tshortŒ^F" + s + "\tintŒ^F" + i + "\tlongŒ^F" + l);
+		System.out.println("byteï¿½^ï¿½F" + b + "\tshortï¿½^ï¿½F" + s + "\tintï¿½^ï¿½F" + i + "\tlongï¿½^ï¿½F" + l);
 		b*=16;	s*=16;	i*=16;	l*=16;
-		System.out.println("byteŒ^F" + b + "\tshortŒ^F" + s + "\tintŒ^F" + i + "\tlongŒ^F" + l);
+		System.out.println("byteï¿½^ï¿½F" + b + "\tshortï¿½^ï¿½F" + s + "\tintï¿½^ï¿½F" + i + "\tlongï¿½^ï¿½F" + l);
 		b*=16;	s*=16;	i*=16;	l*=16;
-		System.out.println("byteŒ^F" + b + "\tshortŒ^F" + s + "\tintŒ^F" + i + "\tlongŒ^F" + l);
+		System.out.println("byteï¿½^ï¿½F" + b + "\tshortï¿½^ï¿½F" + s + "\tintï¿½^ï¿½F" + i + "\tlongï¿½^ï¿½F" + l);
 		b*=16;	s*=16;	i*=16;	l*=16;
-		System.out.println("byteŒ^F" + b + "\tshortŒ^F" + s + "\tintŒ^F" + i + "\tlongŒ^F" + l);
+		System.out.println("byteï¿½^ï¿½F" + b + "\tshortï¿½^ï¿½F" + s + "\tintï¿½^ï¿½F" + i + "\tlongï¿½^ï¿½F" + l);
 		b*=16;	s*=16;	i*=16;	l*=16;
-		System.out.println("byteŒ^F" + b + "\tshortŒ^F" + s + "\tintŒ^F" + i + "\tlongŒ^F" + l);
+		System.out.println("byteï¿½^ï¿½F" + b + "\tshortï¿½^ï¿½F" + s + "\tintï¿½^ï¿½F" + i + "\tlongï¿½^ï¿½F" + l);
 		b*=16;	s*=16;	i*=16;	l*=16;
-		System.out.println("byteŒ^F" + b + "\tshortŒ^F" + s + "\tintŒ^F" + i + "\tlongŒ^F" + l);
+		System.out.println("byteï¿½^ï¿½F" + b + "\tshortï¿½^ï¿½F" + s + "\tintï¿½^ï¿½F" + i + "\tlongï¿½^ï¿½F" + l);
 		b*=16;	s*=16;	i*=16;	l*=16;
-		System.out.println("byteŒ^F" + b + "\tshortŒ^F" + s + "\tintŒ^F" + i + "\tlongŒ^F" + l);
+		System.out.println("byteï¿½^ï¿½F" + b + "\tshortï¿½^ï¿½F" + s + "\tintï¿½^ï¿½F" + i + "\tlongï¿½^ï¿½F" + l);
 		b*=16;	s*=16;	i*=16;	l*=16;
-		System.out.println("byteŒ^F" + b + "\tshortŒ^F" + s + "\tintŒ^F" + i + "\tlongŒ^F" + l);
+		System.out.println("byteï¿½^ï¿½F" + b + "\tshortï¿½^ï¿½F" + s + "\tintï¿½^ï¿½F" + i + "\tlongï¿½^ï¿½F" + l);
 		b*=16;	s*=16;	i*=16;	l*=16;
-		System.out.println("byteŒ^F" + b + "\tshortŒ^F" + s + "\tintŒ^F" + i + "\tlongŒ^F" + l);
+		System.out.println("byteï¿½^ï¿½F" + b + "\tshortï¿½^ï¿½F" + s + "\tintï¿½^ï¿½F" + i + "\tlongï¿½^ï¿½F" + l);
 		b*=16;	s*=16;	i*=16;	l*=16;
-		System.out.println("byteŒ^F" + b + "\tshortŒ^F" + s + "\tintŒ^F" + i + "\tlongŒ^F" + l);
+		System.out.println("byteï¿½^ï¿½F" + b + "\tshortï¿½^ï¿½F" + s + "\tintï¿½^ï¿½F" + i + "\tlongï¿½^ï¿½F" + l);
 		b*=16;	s*=16;	i*=16;	l*=16;
-		System.out.println("byteŒ^F" + b + "\tshortŒ^F" + s + "\tintŒ^F" + i + "\tlongŒ^F" + l);
+		System.out.println("byteï¿½^ï¿½F" + b + "\tshortï¿½^ï¿½F" + s + "\tintï¿½^ï¿½F" + i + "\tlongï¿½^ï¿½F" + l);
 		b*=16;	s*=16;	i*=16;	l*=16;
-		System.out.println("byteŒ^F" + b + "\tshortŒ^F" + s + "\tintŒ^F" + i + "\tlongŒ^F" + l);
+		System.out.println("byteï¿½^ï¿½F" + b + "\tshortï¿½^ï¿½F" + s + "\tintï¿½^ï¿½F" + i + "\tlongï¿½^ï¿½F" + l);
 		b*=16;	s*=16;	i*=16;	l*=16;
-		System.out.println("byteŒ^F" + b + "\tshortŒ^F" + s + "\tintŒ^F" + i + "\tlongŒ^F" + l);
+		System.out.println("byteï¿½^ï¿½F" + b + "\tshortï¿½^ï¿½F" + s + "\tintï¿½^ï¿½F" + i + "\tlongï¿½^ï¿½F" + l);
 		b*=16;	s*=16;	i*=16;	l*=16;
-		System.out.println("byteŒ^F" + b + "\tshortŒ^F" + s + "\tintŒ^F" + i + "\tlongŒ^F" + l);
+		System.out.println("byteï¿½^ï¿½F" + b + "\tshortï¿½^ï¿½F" + s + "\tintï¿½^ï¿½F" + i + "\tlongï¿½^ï¿½F" + l);
 		b*=16;	s*=16;	i*=16;	l*=16;
-		System.out.println("byteŒ^F" + b + "\tshortŒ^F" + s + "\tintŒ^F" + i + "\tlongŒ^F" + l);
+		System.out.println("byteï¿½^ï¿½F" + b + "\tshortï¿½^ï¿½F" + s + "\tintï¿½^ï¿½F" + i + "\tlongï¿½^ï¿½F" + l);
 		b*=16;	s*=16;	i*=16;	l*=16;
-		System.out.println("byteŒ^F" + b + "\tshortŒ^F" + s + "\tintŒ^F" + i + "\tlongŒ^F" + l);
+		System.out.println("byteï¿½^ï¿½F" + b + "\tshortï¿½^ï¿½F" + s + "\tintï¿½^ï¿½F" + i + "\tlongï¿½^ï¿½F" + l);
 	}
 }

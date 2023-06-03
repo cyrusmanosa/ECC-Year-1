@@ -1,36 +1,38 @@
+package J1Kadai03;
+
 /*
-	‰Û‘è–¼FJKad03C1
-	ì¬“úF2022/04/18
-	ì¬ÒF•¶‰Ær
+	ï¿½Û‘è–¼ï¿½FJKad03C1
+	ï¿½ì¬ï¿½ï¿½ï¿½F2022/04/18
+	ï¿½ì¬ï¿½ÒFï¿½ï¿½ï¿½Ær
 */
 public class JKad03C1 {
 	public static void main(String[] args) {
 		int x = 5;
-		System.out.println("•Ï”x‚Ì’l‚ğ•\¦‚µ‚Ü‚·I");
+		System.out.println("ï¿½Ïï¿½xï¿½Ì’lï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½I");
 		System.out.println(x);
 		
-		// ‚½‚µZ
-		System.out.println("•Ï”x‚É14‚ğ‘«‚µ‚Ü‚·I");
+		// ï¿½ï¿½ï¿½ï¿½ï¿½Z
+		System.out.println("ï¿½Ïï¿½xï¿½ï¿½14ï¿½ğ‘«‚ï¿½ï¿½Ü‚ï¿½ï¿½I");
 		x += 14;
 		System.out.println(x);
 		
-		// ‚Ğ‚«Z
-		System.out.println("•Ï”x‚©‚ç3‚ğˆø‚«‚Ü‚·I");
+		// ï¿½Ğ‚ï¿½ï¿½Z
+		System.out.println("ï¿½Ïï¿½xï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½I");
 		x -= 3;
 		System.out.println(x);
 		
-		// ‚©‚¯Z
-		System.out.println("•Ï”x‚É7‚ğ‚©‚¯‚Ü‚·I");
+		// ï¿½ï¿½ï¿½ï¿½ï¿½Z
+		System.out.println("ï¿½Ïï¿½xï¿½ï¿½7ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½I");
 		x *= 7;
 		System.out.println(x);
 		
-		// Š„‚èZ
-		System.out.println("•Ï”x‚ğ10‚ÅŠ„‚è‚Ü‚·I");
+		// ï¿½ï¿½ï¿½ï¿½Z
+		System.out.println("ï¿½Ïï¿½xï¿½ï¿½10ï¿½ÅŠï¿½ï¿½ï¿½Ü‚ï¿½ï¿½I");
 		x /= 10;
 		System.out.println(x);
 		
-		// —]‚è
-		System.out.println("•Ï”x‚ğ4‚ÅŠ„‚Á‚½—]‚è‚ğ‹‚ß‚Ü‚·I");
+		// ï¿½]ï¿½ï¿½
+		System.out.println("ï¿½Ïï¿½xï¿½ï¿½4ï¿½ÅŠï¿½ï¿½ï¿½ï¿½ï¿½ï¿½]ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß‚Ü‚ï¿½ï¿½I");
 		x %= 4;
 		System.out.println(x);
 	}

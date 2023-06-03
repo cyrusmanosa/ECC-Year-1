@@ -1,3 +1,5 @@
+package J1Kadai02;
+
 class JKad02X2{
 	public static void main(String[]arge){
 		int sum;

@@ -1,20 +1,22 @@
+package J1Kadai09;
+
 import java.util.Scanner;
 class JKad09C{
 	public static void main(String[] args){
 		Scanner in = new Scanner(System.in);
-		System.out.println("‚Ğ‚Æ‚èˆê‚Â‚¸‚ÂƒŠƒ“ƒS‚ğH‚×‚Ü‚·I");
-		System.out.print("ƒŠƒ“ƒS‚Ì”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢„");
+		System.out.println("ï¿½Ğ‚Æ‚ï¿½ï¿½Â‚ï¿½ï¿½Âƒï¿½ï¿½ï¿½ï¿½Sï¿½ï¿½Hï¿½×‚Ü‚ï¿½ï¿½I");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½Sï¿½Ìï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		int a = in.nextInt();
-		System.out.print("H‚×‚él‚Ì”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢„");
+		System.out.print("ï¿½Hï¿½×‚ï¿½lï¿½Ìï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		int p = in.nextInt();
 		int an = a / p;
 		int h = a % p;
 		
 		if (an ==1){
-			System.out.println("‚Ğ‚Æ‚èˆê‚Â‚¸‚ÂƒŠƒ“ƒS‚ğH‚×‚½I");
-			System.out.println("c‚Á‚½ƒŠƒ“ƒS‚Í" + h + "ŒÂ‚Å‚·I");
+			System.out.println("ï¿½Ğ‚Æ‚ï¿½ï¿½Â‚ï¿½ï¿½Âƒï¿½ï¿½ï¿½ï¿½Sï¿½ï¿½Hï¿½×‚ï¿½ï¿½I");
+			System.out.println("ï¿½cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Sï¿½ï¿½" + h + "ï¿½Â‚Å‚ï¿½ï¿½I");
 		}else if (an == 0){
-			System.out.println("ƒŠƒ“ƒS‚Ì”‚ª‘«‚è‚Ü‚¹‚ñI");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Sï¿½Ìï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½I");
 		}
 	}
 }

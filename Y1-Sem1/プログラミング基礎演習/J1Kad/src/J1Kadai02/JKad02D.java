@@ -1,3 +1,5 @@
+package J1Kadai02;
+
 class JKad02D{
 	public static void main(String[] args){
 		int i;

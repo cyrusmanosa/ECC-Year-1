@@ -1,3 +1,5 @@
+package J1Kadai11;
+
 import java.util.Scanner;
 
 class JKad11B{

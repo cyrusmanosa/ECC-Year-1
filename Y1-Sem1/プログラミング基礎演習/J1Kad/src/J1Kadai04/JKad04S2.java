@@ -1,3 +1,5 @@
+package J1Kadai04;
+
 import java.util.Scanner;
 class JKad04S2{
 	public static void main(String[] args){
@@ -13,7 +15,7 @@ class JKad04S2{
 		int h;
 		
 		Scanner in = new Scanner(System.in);
-		System.out.print("0 ‚©‚ç255 ‚Ü‚Å‚Ì®”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢„");
+		System.out.print("0 ï¿½ï¿½ï¿½ï¿½255 ï¿½Ü‚Å‚Ìï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		
 		Num = in.nextInt();
 		
@@ -27,7 +29,7 @@ class JKad04S2{
 		g = (((((((Num/2)/2)/2)/2)/2)/2)/2)%2;
 		//h = ((((((((Num/2)/2)/2)/2)/2)/2)/2)/2)%2;
 		
-		System.out.println("ÅãˆÊƒrƒbƒg‚©‚ç‡‚É•\¦‚µ‚Ü‚·I");
+		System.out.println("ï¿½Åï¿½Êƒrï¿½bï¿½gï¿½ï¿½ï¿½ç‡ï¿½É•\ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½I");
 		//System.out.print(h);
 		System.out.print(g);
 		System.out.print(f);

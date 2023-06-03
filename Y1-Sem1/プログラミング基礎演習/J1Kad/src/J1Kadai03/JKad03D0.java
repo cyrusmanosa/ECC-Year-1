@@ -1,23 +1,25 @@
+package J1Kadai03;
+
 public class JKad03D0 {
 	public static void main(String[] args) {
-		// ‚±‚ñ‚É‚¿‚ÍI
-		System.out.println("‚±‚ñ‚É‚¿‚ÍI\n¡“ú‚à‚æ‚¢“V‹C‚Å‚·‚ËI");
+		// ï¿½ï¿½ï¿½ï¿½É‚ï¿½ï¿½ÍI
+		System.out.println("ï¿½ï¿½ï¿½ï¿½É‚ï¿½ï¿½ÍI\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ‚¢ï¿½Vï¿½Cï¿½Å‚ï¿½ï¿½ËI");
 		
-		// ‚±‚ê‚©‚ç"JavaŒ¾Œê"‚ğŠwK‚µ‚Ü‚·I
-		System.out.println("‚±‚ê‚©‚ç\"JavaŒ¾Œê\"‚ğŠwK‚µ‚Ü‚·I");
+		// ï¿½ï¿½ï¿½ê‚©ï¿½ï¿½"Javaï¿½ï¿½ï¿½ï¿½"ï¿½ï¿½ï¿½wï¿½Kï¿½ï¿½ï¿½Ü‚ï¿½ï¿½I
+		System.out.println("ï¿½ï¿½ï¿½ê‚©ï¿½ï¿½\"Javaï¿½ï¿½ï¿½ï¿½\"ï¿½ï¿½ï¿½wï¿½Kï¿½ï¿½ï¿½Ü‚ï¿½ï¿½I");
 		
-		// •Ï”a‚Ì’l‚Ì•\¦
+		// ï¿½Ïï¿½aï¿½Ì’lï¿½Ì•\ï¿½ï¿½
 		int a = 5;
-		System.out.print("•Ï”a‚Ì’lF");
+		System.out.print("ï¿½Ïï¿½aï¿½Ì’lï¿½F");
 		System.out.println(a);
 		
-		// •Ï”b‚Ì’l‚Ì•\¦
+		// ï¿½Ïï¿½bï¿½Ì’lï¿½Ì•\ï¿½ï¿½
 		int b = 10;
-		System.out.print("•Ï”b‚Ì’lF");
+		System.out.print("ï¿½Ïï¿½bï¿½Ì’lï¿½F");
 		System.out.println(b);
 		
-		// a+b‚ÌŒ‹‰Ê•\¦
-		System.out.print("a+b‚ÌŒ‹‰ÊF");
+		// a+bï¿½ÌŒï¿½ï¿½Ê•\ï¿½ï¿½
+		System.out.print("a+bï¿½ÌŒï¿½ï¿½ÊF");
 		System.out.println(a + b);
 	}
 }

@@ -1,28 +1,24 @@
+package J1Kadai10;
+
 import java.util.Scanner;
 
 class JKad10B{
-	public static void main(String[] args){
-		Scanner in = new Scanner(System.in);
-		System.out.println("‚»‚¤‚¾I…‘°ŠÙ‚Ös‚±‚¤II");
-		System.out.print("‚ ‚È‚½‚Ì”N—î‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢„");
-		int a = in.nextInt();
-		if (a >= 65) {
-			System.out.println("ƒVƒjƒA—¿‹àF2200 ‰~‚É‚È‚è‚Ü‚·I");
+	public static void main(String[] var0) {
+		Scanner var1 = new Scanner(System.in);
+		System.out.println("ãã†ã ï¼æ°´æ—é¤¨ã¸è¡Œã“ã†ï¼ï¼");
+		System.out.print("ã‚ãªãŸã®å¹´é½¢ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ï¼");
+		int var2 = var1.nextInt();
+		if (var2 >= 65) {
+			System.out.println("ã‚·ãƒ‹ã‚¢æ–™é‡‘ï¼š2200 å††ã«ãªã‚Šã¾ã™ï¼");
+		} else if (var2 < 65 && var2 >= 15) {
+			System.out.println("å¤§äººæ–™é‡‘ï¼š2400 å††ã«ãªã‚Šã¾ã™ï¼");
+		} else if (var2 >= 6 && var2 < 15) {
+			System.out.println("å­ä¾›æ–™é‡‘ï¼š1200 å††ã«ãªã‚Šã¾ã™ï¼");
+		} else if (var2 >= 3 && var2 < 6) {
+			System.out.println("å¹¼å…æ–™é‡‘ï¼š600 å††ã«ãªã‚Šã¾ã™ï¼");
+		} else {
+			System.out.println("ç„¡æ–™ã§ã™ï¼");
 		}
-		
-		if (a < 65 && a >= 15 ) {
-			System.out.println("‘ål—¿‹àF2400 ‰~‚É‚È‚è‚Ü‚·I");
-		}
-		if ( a >= 6 && a < 15 ){
-			System.out.println("q‹Ÿ—¿‹àF1200 ‰~‚É‚È‚è‚Ü‚·I");
-		}
-		
-		if (a >= 3 && a < 6) {
-			System.out.println("—c™—¿‹àF600 ‰~‚É‚È‚è‚Ü‚·I");
-		}
-		
-		if (a < 3) {
-			System.out.println("–³—¿‚Å‚·I");
-		}
+
 	}
 }

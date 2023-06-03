@@ -1,41 +1,43 @@
+package J1Kadai11;
+
 import java.util.Scanner;
 
 class JKad11A{
 	public static void main(String[] args){
 		Scanner in = new Scanner(System.in);
-		System.out.println("‚»‚¤‚¾I“®•¨‰€‚Ös‚±‚¤II");
-		System.out.print("‰½l‚Ås‚«‚Ü‚·‚©H„");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Iï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ösï¿½ï¿½ï¿½ï¿½ï¿½Iï¿½I");
+		System.out.print("ï¿½ï¿½ï¿½lï¿½Åsï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½Hï¿½ï¿½");
 		int p = in.nextInt();
-		System.out.print("‚ ‚È‚½‚Ì”N—î‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢„");
+		System.out.print("ï¿½ï¿½ï¿½È‚ï¿½ï¿½Ì”Nï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		int a = in.nextInt();
 		
 		if (p < 30){
 			if (a < 6){
-				System.out.println("–³—¿‚Å‚·I");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Å‚ï¿½ï¿½I");
 			}else if (a >= 15){
-				System.out.println("‘ål—¿‹àF500 ‰~‚É‚È‚è‚Ü‚·I");
+				System.out.println("ï¿½ï¿½lï¿½ï¿½ï¿½ï¿½ï¿½F500 ï¿½~ï¿½É‚È‚ï¿½Ü‚ï¿½ï¿½I");
 			}else{
-				System.out.println("q‹Ÿ—¿‹àF200 ‰~‚É‚È‚è‚Ü‚·I");
+				System.out.println("ï¿½qï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½F200 ï¿½~ï¿½É‚È‚ï¿½Ü‚ï¿½ï¿½I");
 			}
 		}
 			
 		if (p >= 30 && p < 50){
 			if (a < 6){
-				System.out.println("–³—¿‚Å‚·I");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Å‚ï¿½ï¿½I");
 			}else if (a >= 15){
-				System.out.println("‘ål—¿‹àF450 ‰~‚É‚È‚è‚Ü‚·I");
+				System.out.println("ï¿½ï¿½lï¿½ï¿½ï¿½ï¿½ï¿½F450 ï¿½~ï¿½É‚È‚ï¿½Ü‚ï¿½ï¿½I");
 			}else{
-				System.out.println("q‹Ÿ—¿‹àF180 ‰~‚É‚È‚è‚Ü‚·I");
+				System.out.println("ï¿½qï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½F180 ï¿½~ï¿½É‚È‚ï¿½Ü‚ï¿½ï¿½I");
 			}
 		}
 			
 		if (p >= 50){
 			if (a < 6){
-				System.out.println("–³—¿‚Å‚·I");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Å‚ï¿½ï¿½I");
 			}else if (a >= 15){
-				System.out.println("‘ål—¿‹àF400 ‰~‚É‚È‚è‚Ü‚·I");
+				System.out.println("ï¿½ï¿½lï¿½ï¿½ï¿½ï¿½ï¿½F400 ï¿½~ï¿½É‚È‚ï¿½Ü‚ï¿½ï¿½I");
 			}else{
-				System.out.println("q‹Ÿ—¿‹àF160 ‰~‚É‚È‚è‚Ü‚·I");
+				System.out.println("ï¿½qï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½F160 ï¿½~ï¿½É‚È‚ï¿½Ü‚ï¿½ï¿½I");
 			}
 		}
 	}

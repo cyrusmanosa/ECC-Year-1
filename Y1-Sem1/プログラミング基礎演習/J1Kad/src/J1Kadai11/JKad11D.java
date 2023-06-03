@@ -1,3 +1,5 @@
+package J1Kadai11;
+
 import java.util.Scanner;
 class JKad11D{
 	public static void main(String[] args){
@@ -11,7 +13,7 @@ class JKad11D{
 		boolean correct = ((a + b) == c);
 		correct = true;
 		System.out.println("判定は・・・" + ((a + b) == c));
-		if ((a + b) == c) {
+		if (correct) {
 			System.out.println("正解です！");
 		}else{
 			System.out.println("不正解です！");

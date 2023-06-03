@@ -1,16 +1,18 @@
+package J1Kadai02;
+
 class JKad02A{
 	public static void main(String[]args){
 		int apple;
 		apple=10;
 		int person;
 		person=3;
-		System.out.println("ƒŠƒ“ƒS‚ª10 ŒÂ‚ ‚è‚Ü‚µ‚½I");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Sï¿½ï¿½10 ï¿½Â‚ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½I");
 		System.out.println(apple);
-		System.out.println("lŠÔ‚ª3 l‚â‚Á‚Ä‚«‚Ü‚µ‚½I");
+		System.out.println("ï¿½lï¿½Ô‚ï¿½3 ï¿½lï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½I");
 		System.out.println(person);
-		System.out.println("‚»‚ê‚¼‚ê‚ªH‚×‚½ƒŠƒ“ƒS‚Ì”‚Í");
+		System.out.println("ï¿½ï¿½ï¿½ê‚¼ï¿½ê‚ªï¿½Hï¿½×‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Sï¿½Ìï¿½ï¿½ï¿½");
 		System.out.println(apple/person);
-		System.out.println("c‚Á‚½ƒŠƒ“ƒS‚Ì”‚Í");
+		System.out.println("ï¿½cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Sï¿½Ìï¿½ï¿½ï¿½");
 		System.out.println(apple%person);
 	}
 }

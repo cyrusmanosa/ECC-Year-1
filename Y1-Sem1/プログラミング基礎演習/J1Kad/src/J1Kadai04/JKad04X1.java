@@ -1,10 +1,12 @@
+package J1Kadai04;
+
 import java.util.Scanner;
 class JKad04X1{
 	public static void main(String[] args){
 		int Num;
 		
 		Scanner in = new Scanner(System.in);
-		System.out.print("0 ‚©‚ç255 ‚Ü‚Å‚Ì®”‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢„");
+		System.out.print("0 ï¿½ï¿½ï¿½ï¿½255 ï¿½Ü‚Å‚Ìï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		Num = in.nextInt();
 		
 		while(Num>0){

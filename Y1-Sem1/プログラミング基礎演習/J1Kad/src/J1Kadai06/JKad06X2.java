@@ -1,11 +1,13 @@
+package J1Kadai06;
+
 import java.util.Scanner;
 
 class JKad06X2{
 	public static void main(String[] args){
 		Scanner in = new Scanner(System.in);
 		
-		System.out.println("ƒ‚ƒ“ƒeƒJƒ‹ƒEƒVƒ~ƒ…ƒŒ[ƒVƒ‡ƒ“‚Å‰~ü—¦‚ğ‹‚ß‚Ü‚·I");
-		System.out.print("‰½‰ñƒVƒ~ƒ…ƒŒ[ƒVƒ‡ƒ“‚µ‚Ü‚·‚©H„");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½eï¿½Jï¿½ï¿½ï¿½ï¿½ï¿½Eï¿½Vï¿½~ï¿½ï¿½ï¿½ï¿½ï¿½[ï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½Å‰~ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß‚Ü‚ï¿½ï¿½I");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½Vï¿½~ï¿½ï¿½ï¿½ï¿½ï¿½[ï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½Hï¿½ï¿½");
 		
             int i,imax;
             double x,y;
@@ -20,6 +22,6 @@ class JKad06X2{
                 }
              }
              double pi = n / imax*4;
-             System.out.println("‰~ü—¦‚Í" + pi + "‚Å‚·I");
+             System.out.println("ï¿½~ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" + pi + "ï¿½Å‚ï¿½ï¿½I");
 	}
 }

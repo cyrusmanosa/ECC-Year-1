@@ -1,16 +1,18 @@
+package J1Kadai09;
+
 import java.util.Scanner;
 class JKad09S{
 	public static void main(String[] args){
 		Scanner in = new Scanner(System.in);
-		System.out.print("‚Ì‚Ñ‘¾‚Ì“_”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢„");
+		System.out.print("ï¿½Ì‚Ñ‘ï¿½ï¿½Ì“_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		int a = in.nextInt();
-		System.out.print("‚µ‚¸‚©‚¿‚á‚ñ‚Ì“_”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢„");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì“_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		int b = in.nextInt();
-		System.out.print("ƒWƒƒƒCƒAƒ“‚Ì“_”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢„");
+		System.out.print("ï¿½Wï¿½ï¿½ï¿½Cï¿½Aï¿½ï¿½ï¿½Ì“_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		int c = in.nextInt();
-		System.out.print("ƒXƒl•v‚Ì“_”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢„");
+		System.out.print("ï¿½Xï¿½lï¿½vï¿½Ì“_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		int d = in.nextInt();
-		System.out.print("o–Ø™‚­‚ñ‚Ì“_”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢„");
+		System.out.print("ï¿½oï¿½Øï¿½ï¿½ï¿½ï¿½ï¿½Ì“_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		int e = in.nextInt();
 		int max = a;
 		int s = a ;
@@ -50,6 +52,6 @@ class JKad09S{
 			s = e;
 		}
 			
-		System.out.println("“ñ”Ô–Ú‚É‚‚¢“_”" + s + "“_‚Å‚·I");
+		System.out.println("ï¿½ï¿½Ô–Ú‚Éï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½" + s + "ï¿½_ï¿½Å‚ï¿½ï¿½I");
 	}
 }
