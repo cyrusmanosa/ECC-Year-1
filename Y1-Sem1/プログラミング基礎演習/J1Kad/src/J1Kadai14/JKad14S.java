@@ -80,16 +80,16 @@ public class JKad14S {
             if (a == 1){
                 gotoForest();
             }else{
-                gotoCastle();
+//                gotoCastle();
             }
         System.out.print("�����A");
     }
 
-    // ��֍s�� P6
-    public static void gotoCastle(){
-        System.out.println("\n");
-        System.out.println("��ɒ����܂����I");
-        System.out.println("������\�����܂��I");
-        System.out.print("��");
-    }
+//    // ��֍s�� P6
+//    public static void gotoCastle(){
+//        System.out.println("\n");
+//        System.out.println("��ɒ����܂����I");
+//        System.out.println("������\�����܂��I");
+//        System.out.print("��");
+//    }
 }
