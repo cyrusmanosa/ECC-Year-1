@@ -1,0 +1,1 @@
+package J2Kad07;public abstract class RPGCharacter {    public void callAllMethod(){        attack();        defend();        useItem();    }    public abstract void attack();    public abstract void defend();    public void useItem(){ System.out.println("何かのアイテムを使います！"); }}

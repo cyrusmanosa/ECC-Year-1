@@ -1,0 +1,1 @@
+package J2Kad07;public class Fighter extends RPGCharacter{    public void attack() { System.out.println("•Ší‚ÅUŒ‚‚µ‚Ü‚·I"); }    public void defend() { System.out.println("‚‚Å–hŒä‚µ‚Ü‚·I"); }}

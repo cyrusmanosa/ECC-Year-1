@@ -1,0 +1,32 @@
+body{
+    font-family:"ＭＳ Ｐゴシック",sans-serif;
+}
+
+/* 'MS Gothic' */
+
+h1{
+    color: #c30;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Times New Roman', serif;
+    font-size: 1.1em;
+}
+
+.text{
+    text-indent:1em;
+}
+
+.text em{
+    color: #c30;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+#inyou{
+    font-size: 12px;
+    text-align: right;
+    font-family: monospace;
+}

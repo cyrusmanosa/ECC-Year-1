@@ -1,0 +1,1 @@
+package J2Kad06;public class FireMonster extends Monster{    FireMonster(String name){ super(name); }    @Override    public void intro(){        super.intro();        System.out.println("炎も出せるよ！");    }    public void fire(){        System.out.println(name + "は炎をはいた！ゴオ~!!");    }}

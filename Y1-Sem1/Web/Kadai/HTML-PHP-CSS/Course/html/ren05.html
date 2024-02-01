@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- meta -->
+  <meta charset="UTF-8">
+  
+  <title>練習06</title>
+</head>
+    <body>
+    <h1>フォーム処理2</h1>
+    <h2>フォームに入力された内容を送信する</h2>
+        <form action="ren05.php" method="POST">
+            <div>
+                <label><input type="radio" name="seibetu" value="1" checked>男性</label>
+                <label><input type="radio" name="seibetu" value="2">女性</label>
+            </div>
+            
+            <div>
+                <label><input type="checkbox" name="mail" value="1" checked>メールでのお知らせを受け取る</label>
+            </div>
+                <button type="submit" name="sub">送信</button>
+            </div>
+        </form>
+    </body>
+</html>

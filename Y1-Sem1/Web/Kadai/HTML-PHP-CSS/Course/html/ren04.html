@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- meta -->
+  <meta charset="UTF-8">
+  
+  <title>練習04</title>
+</head>
+    <body>
+        <h1>フォーム処理１</h1>
+        <h2>フォームに入力された内容を送信する</h2>
+
+            <form action="ren04.php" method="POST"> <!--連接PHP-->
+                
+                <div>
+                    <label>名前：<input type="text" name="name" autofocus required></label>（20文字以内）
+                </div>
+                <div>
+                    <label>パスワード：<input type="password" name="pass" required></label>
+                </div>
+                <div>
+                    <button type="submit" name="sub">送信</button>
+                </div>
+                
+            </form>
+    </body>
+</html>

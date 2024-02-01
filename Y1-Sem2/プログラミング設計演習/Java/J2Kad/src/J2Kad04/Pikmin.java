@@ -1,0 +1,1 @@
+package J2Kad04;public class Pikmin {    static int count = 0;    static void showCount(){        System.out.println( "これまでに見つけたピクミンは" + count + "匹です！" );    }    Pikmin(){        System.out.println("ピクミンがやってきた！");        count++;    }}
